@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['send_5fcss',['send_css',['../namespaceweb_back.html#aa3905888cf38ed1374d1adc98c45bca6',1,'webBack']]],
+  ['send_5ffonts',['send_fonts',['../namespaceweb_back.html#adac705fce6dde6308b579f703b3b627f',1,'webBack']]],
+  ['send_5fjs',['send_js',['../namespaceweb_back.html#a36644ac58627cbb02b55457d97a7f915',1,'webBack']]],
+  ['send_5fpics',['send_pics',['../namespaceweb_back.html#a8d2fb2f4dc56c083de514b9c0d43d7fb',1,'webBack']]],
+  ['send_5fpics_5fstats',['send_pics_stats',['../namespaceweb_back.html#a48f3c269d1d9ba6b7edf365414bbaea8',1,'webBack']]],
+  ['setactivetimecolor',['setActiveTimeColor',['../namespacegame_1_1i2c.html#a6c70916a0df4071830627cc65b734df4',1,'game::i2c']]],
+  ['setallballsleds',['setAllBallsLeds',['../classgame_1_1_player_1_1player.html#acd6fe061d9978ebb27c7fd1be56f2052',1,'game::Player::player']]],
+  ['setballs',['setBalls',['../classgame_1_1_player_1_1player.html#a90c95f354f2194c788f6895a7feae1ad',1,'game::Player::player']]],
+  ['setballsleds',['setBallsLeds',['../namespacegame_1_1i2c.html#a6cc044fcf10970e62f6e7d8a8eea7dbd',1,'game::i2c']]],
+  ['setbrilcolor',['setBrilColor',['../classgame_1_1_player_1_1player.html#a4fea2d8b13f9b59b91d3d14d5c28efc0',1,'game::Player::player']]],
+  ['setheadsetcolor',['setHeadsetColor',['../namespacegame_1_1i2c.html#a2988a923a2bb6a9d2f4c8e7409e0aded',1,'game::i2c']]],
+  ['setinputs',['setinputs',['../namespacegame_1_1i2c.html#a1d5b4aed68be231c5ca8d1611701a17c',1,'game::i2c']]],
+  ['setledstriptime',['setLedStripTime',['../namespacegame_1_1i2c.html#ae885c09ef1646e179bf8b880fbb284a6',1,'game::i2c']]],
+  ['setpassivetimecolor',['setPassiveTimeColor',['../namespacegame_1_1i2c.html#a53e720c22085d10f15012190ea3f8ab9',1,'game::i2c']]],
+  ['startgame',['startGame',['../classgame_1_1game_1_1_game.html#aa78d70ae2aafa130eaa143ce55887aff',1,'game.game.Game.startGame()'],['../namespacegame_1_1i2c.html#a3a43a96db3ce557e507f3c08617b19c5',1,'game.i2c.startgame()'],['../namespaceweb_back.html#a5f030b0ffd219cb8152121a951e8767a',1,'webBack.startgame()']]],
+  ['startinfo',['startInfo',['../namespaceweb_back.html#aaf96757aed7ac16a95fea349a78f9faf',1,'webBack']]],
+  ['startserver',['startServer',['../namespace____main____.html#a2b75075b3fab588340f99971f29de8da',1,'__main__']]],
+  ['starttime',['startTime',['../classgame_1_1_player_1_1player.html#a1025dee804906a22181c3ea3a6f4fadc',1,'game::Player::player']]],
+  ['statinfo',['statinfo',['../namespaceweb_back.html#a37f3ed1601cc23aa04e72ebf237ba3c5',1,'webBack']]],
+  ['stats',['stats',['../namespaceweb_back.html#a251f9bc8dbc3de8ac0e0aa681388d52d',1,'webBack']]]
+];

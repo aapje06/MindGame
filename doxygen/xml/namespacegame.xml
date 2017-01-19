@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="namespacegame" kind="namespace" language="Python">
+    <compoundname>game</compoundname>
+    <innernamespace refid="namespacegame_1_1game">game::game</innernamespace>
+    <innernamespace refid="namespacegame_1_1i2c">game::i2c</innernamespace>
+    <innernamespace refid="namespacegame_1_1_player">game::Player</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

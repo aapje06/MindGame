@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.12">
+  <compound refid="classgame_1_1game_1_1_game" kind="class"><name>game::game::Game</name>
+    <member refid="classgame_1_1game_1_1_game_1a5386ee402dfe77ffb134697b75f81e26" kind="variable"><name>player1</name></member>
+    <member refid="classgame_1_1game_1_1_game_1a49f9ad8e7cfbcb84c2669fb43958df42" kind="variable"><name>player2</name></member>
+    <member refid="classgame_1_1game_1_1_game_1aaf5ef5a17b53e9997c837b07015589de" kind="variable"><name>GameMode</name></member>
+    <member refid="classgame_1_1game_1_1_game_1a68bcdfccc99b6ac8189450754da36f78" kind="variable"><name>lightMode</name></member>
+    <member refid="classgame_1_1game_1_1_game_1acb971b832c5f8a89e9995caaee26a1df" kind="variable"><name>countdown</name></member>
+    <member refid="classgame_1_1game_1_1_game_1aa850ae5126b39a75859039aa84c3a577" kind="variable"><name>p1</name></member>
+    <member refid="classgame_1_1game_1_1_game_1a9099c7c12dde5f81f4d3ce261da3637c" kind="variable"><name>p2</name></member>
+    <member refid="classgame_1_1game_1_1_game_1a84a2c5df02ca5f02dc12bfec660ad82a" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1game_1_1_game_1aa78d70ae2aafa130eaa143ce55887aff" kind="function"><name>startGame</name></member>
+    <member refid="classgame_1_1game_1_1_game_1aed504f4752749c9ca28461f4628ae5c3" kind="function"><name>getPlayer1Name</name></member>
+    <member refid="classgame_1_1game_1_1_game_1acd678d3a250de66662badf84935e5ffb" kind="function"><name>getPlayer2Name</name></member>
+  </compound>
+  <compound refid="classgame_1_1_player_1_1player" kind="class"><name>game::Player::player</name>
+    <member refid="classgame_1_1_player_1_1player_1aa5998168cabfb2b2e41151349077812c" kind="variable"><name>Name</name></member>
+    <member refid="classgame_1_1_player_1_1player_1a70c092a6aebace0b1ea406e14da78a40" kind="variable"><name>time</name></member>
+    <member refid="classgame_1_1_player_1_1player_1aa820f7e11b025b06f4eeb0ad7581ad34" kind="variable"><name>maxTime</name></member>
+    <member refid="classgame_1_1_player_1_1player_1aaf5ef5a17b53e9997c837b07015589de" kind="variable"><name>GameMode</name></member>
+    <member refid="classgame_1_1_player_1_1player_1adbeef4da431e7d5e416c32ee188659f7" kind="variable"><name>LightMode</name></member>
+    <member refid="classgame_1_1_player_1_1player_1aed45ca508d997dd992682abff8790bde" kind="variable"><name>pin</name></member>
+    <member refid="classgame_1_1_player_1_1player_1a32238a7b64cb50d84a8aaa16991856e7" kind="variable"><name>stress</name></member>
+    <member refid="classgame_1_1_player_1_1player_1a07f043935f9198f29c102e457f37e2a7" kind="variable"><name>balls</name></member>
+    <member refid="classgame_1_1_player_1_1player_1ab9a89211ecb71d18bbd259853fda1c54" kind="variable"><name>points</name></member>
+    <member refid="classgame_1_1_player_1_1player_1abdbd1aa902babb2b61d19e44dcd88412" kind="variable"><name>timethread</name></member>
+    <member refid="classgame_1_1_player_1_1player_1a3924cdbb3a2e56cd1ff60d8562e29551" kind="variable"><name>updatethread</name></member>
+    <member refid="classgame_1_1_player_1_1player_1a36c4719a5155181787e577197de2f4fd" kind="variable"><name>updateloop</name></member>
+    <member refid="classgame_1_1_player_1_1player_1aeb2f8044324fe09477addfe8b6cc2ba2" kind="variable"><name>holescores</name></member>
+    <member refid="classgame_1_1_player_1_1player_1a2af8a98688fb3fdd4af4ccf4a3aeeb9a" kind="variable"><name>brilkleur</name></member>
+    <member refid="classgame_1_1_player_1_1player_1a7414c080ff0224b59be39eb949eec0e4" kind="variable"><name>blinkBril</name></member>
+    <member refid="classgame_1_1_player_1_1player_1a64e24d506f270a01dde24d266af439dd" kind="variable"><name>blinkOn</name></member>
+    <member refid="classgame_1_1_player_1_1player_1ab587deac2ae34c126e6222afedb790ea" kind="variable"><name>game</name></member>
+    <member refid="classgame_1_1_player_1_1player_1a027a09f90ea572dba24b1b7840c0ddf2" kind="function"><name>__init__</name></member>
+    <member refid="classgame_1_1_player_1_1player_1a1025dee804906a22181c3ea3a6f4fadc" kind="function"><name>startTime</name></member>
+    <member refid="classgame_1_1_player_1_1player_1a28e064aedf0753d6d5c30e46c4f791b5" kind="function"><name>timeLooping</name></member>
+    <member refid="classgame_1_1_player_1_1player_1ac0084ae4f98be3d62cf166d2161f3234" kind="function"><name>updateLooping</name></member>
+    <member refid="classgame_1_1_player_1_1player_1abb1fe44b5f3819007f0e499019e915e3" kind="function"><name>endGame</name></member>
+    <member refid="classgame_1_1_player_1_1player_1a2aae31c5ae0c817b975b2dc4ae470e98" kind="function"><name>writeToSql</name></member>
+    <member refid="classgame_1_1_player_1_1player_1acd6fe061d9978ebb27c7fd1be56f2052" kind="function"><name>setAllBallsLeds</name></member>
+    <member refid="classgame_1_1_player_1_1player_1a90c95f354f2194c788f6895a7feae1ad" kind="function"><name>setBalls</name></member>
+    <member refid="classgame_1_1_player_1_1player_1a4fea2d8b13f9b59b91d3d14d5c28efc0" kind="function"><name>setBrilColor</name></member>
+    <member refid="classgame_1_1_player_1_1player_1a9747e45f935d296c2c0b508127fd7c4a" kind="function"><name>getBalls</name></member>
+    <member refid="classgame_1_1_player_1_1player_1a91720e5fd3a7e677f314a4b26451b864" kind="function"><name>getName</name></member>
+  </compound>
+  <compound refid="classweb_back_1_1_server_sent_event" kind="class"><name>webBack::ServerSentEvent</name>
+    <member refid="classweb_back_1_1_server_sent_event_1a511ae0b1c13f95e5f08f1a0dd3da3d93" kind="variable"><name>data</name></member>
+    <member refid="classweb_back_1_1_server_sent_event_1a3b65133bb9997cd1ccf311af0927fc9e" kind="variable"><name>event</name></member>
+    <member refid="classweb_back_1_1_server_sent_event_1acf2488b95c97e0378c9bf49de3b50f28" kind="variable"><name>id</name></member>
+    <member refid="classweb_back_1_1_server_sent_event_1af6ce9532eff4ab447fa4598622e1c4f2" kind="variable"><name>retry</name></member>
+    <member refid="classweb_back_1_1_server_sent_event_1a3f479e287873b8ab2327439f41a36969" kind="variable"><name>desc_map</name></member>
+    <member refid="classweb_back_1_1_server_sent_event_1a66ce128aaaf6596bbc7b0e6f3168de3f" kind="function"><name>__init__</name></member>
+    <member refid="classweb_back_1_1_server_sent_event_1a4b60b01b4d79989f97d040a26388d852" kind="function"><name>encode</name></member>
+  </compound>
+  <compound refid="namespace____main____" kind="namespace"><name>__main__</name>
+    <member refid="namespace____main_____1a1406f37190e825427440bc020919218a" kind="variable"><name>go</name></member>
+    <member refid="namespace____main_____1aaa52a27abaaf72231a84c99f2bfa4283" kind="variable"><name>gameRunning</name></member>
+    <member refid="namespace____main_____1a89a7f6028a19c3dc081cc5f16eb53891" kind="variable"><name>db</name></member>
+    <member refid="namespace____main_____1af60395b62cdfc4e22c9bee4739bcc464" kind="variable"><name>dbc</name></member>
+    <member refid="namespace____main_____1acf77f6f6ad1fd09466587857fd4b2e7e" kind="variable"><name>sql</name></member>
+    <member refid="namespace____main_____1ae3f5dd704a78b1b22fbf6672452aff3e" kind="variable"><name>thread</name></member>
+    <member refid="namespace____main_____1a53ebc1b671bc860d557e274c6f7db716" kind="variable"><name>whiletruethread</name></member>
+    <member refid="namespace____main_____1a2b75075b3fab588340f99971f29de8da" kind="function"><name>startServer</name></member>
+    <member refid="namespace____main_____1a5cd663b7efff8164ad13f39d2f577eee" kind="function"><name>whiletrue</name></member>
+  </compound>
+  <compound refid="namespacegame" kind="namespace"><name>game</name>
+  </compound>
+  <compound refid="namespacegame_1_1game" kind="namespace"><name>game::game</name>
+  </compound>
+  <compound refid="namespacegame_1_1i2c" kind="namespace"><name>game::i2c</name>
+    <member refid="namespacegame_1_1i2c_1a7e0dfd391eb5195c444ecafa938194e6" kind="variable"><name>sensor1</name></member>
+    <member refid="namespacegame_1_1i2c_1ad8dff55b9286c066e6bc71950b710a28" kind="variable"><name>sensor2</name></member>
+    <member refid="namespacegame_1_1i2c_1ada8d57d81c6d31174d5072cd306a5319" kind="variable"><name>holes1</name></member>
+    <member refid="namespacegame_1_1i2c_1a9b974e58b92b6ace923493eb04219145" kind="variable"><name>holes2</name></member>
+    <member refid="namespacegame_1_1i2c_1a411bd59fecc82fdfda0e5c9d7da7447f" kind="variable"><name>bus</name></member>
+    <member refid="namespacegame_1_1i2c_1a45c6bc6d1135dc398bf8deae861a2ebc" kind="variable"><name>address</name></member>
+    <member refid="namespacegame_1_1i2c_1a7ddd85a4f113648910e222fb76d93506" kind="variable"><name>teller1</name></member>
+    <member refid="namespacegame_1_1i2c_1a255c8064ec67df52c6aadc54ea744b11" kind="variable"><name>teller2</name></member>
+    <member refid="namespacegame_1_1i2c_1a41e4c864658657ecc0ecc43d65db5a64" kind="variable"><name>p1active</name></member>
+    <member refid="namespacegame_1_1i2c_1a74f6b1b14e9155ac66e89d1c72c3ace9" kind="variable"><name>p1passive</name></member>
+    <member refid="namespacegame_1_1i2c_1a9ba589e5b81a9e64152ebf0c727a3238" kind="variable"><name>p2active</name></member>
+    <member refid="namespacegame_1_1i2c_1a16792386ad01936c15a8677177571de3" kind="variable"><name>p2passive</name></member>
+    <member refid="namespacegame_1_1i2c_1a0150eb7d9551697284fa8def1d6a5e78" kind="variable"><name>LED_COUNT</name></member>
+    <member refid="namespacegame_1_1i2c_1a7d6ed2029581b42043aa921270f03362" kind="variable"><name>LED_PIN</name></member>
+    <member refid="namespacegame_1_1i2c_1a4985f02a4206248cfb12e46ac7e5fa1a" kind="variable"><name>LED_FREQ_HZ</name></member>
+    <member refid="namespacegame_1_1i2c_1a3577c4e268c23fe92bb64fdb4c878027" kind="variable"><name>LED_DMA</name></member>
+    <member refid="namespacegame_1_1i2c_1ac0bf31bc536242ae4682e1d4e782f671" kind="variable"><name>LED_BRIGHTNESS</name></member>
+    <member refid="namespacegame_1_1i2c_1a02f2f11be4e8df2102f522e3e8983d7b" kind="variable"><name>LED_INVERT</name></member>
+    <member refid="namespacegame_1_1i2c_1a42641ead00dd4d143296d15b3987dea9" kind="variable"><name>strip</name></member>
+    <member refid="namespacegame_1_1i2c_1a8ae8dfaf0d98d3e56f9f87fa8d863668" kind="variable"><name>averagecounter</name></member>
+    <member refid="namespacegame_1_1i2c_1a90ec455573b3639b7b0d7df1fc0d86db" kind="variable"><name>sensor1Average</name></member>
+    <member refid="namespacegame_1_1i2c_1a7d4f6ad3f32515d2299fa2bccce619cf" kind="variable"><name>sensor2Average</name></member>
+    <member refid="namespacegame_1_1i2c_1a1d5b4aed68be231c5ca8d1611701a17c" kind="function"><name>setinputs</name></member>
+    <member refid="namespacegame_1_1i2c_1a7e8169f802337f7cea2d2f1bd574d10b" kind="function"><name>resetAverage</name></member>
+    <member refid="namespacegame_1_1i2c_1acd6c2462d1aa66a93f0c6a0082e5e905" kind="function"><name>getAverage</name></member>
+    <member refid="namespacegame_1_1i2c_1aa4e92c48e15886b974e184f3f010fc1f" kind="function"><name>readSensor</name></member>
+    <member refid="namespacegame_1_1i2c_1ab81bf937d9c153a616b84229be27cfdf" kind="function"><name>readballs</name></member>
+    <member refid="namespacegame_1_1i2c_1ae885c09ef1646e179bf8b880fbb284a6" kind="function"><name>setLedStripTime</name></member>
+    <member refid="namespacegame_1_1i2c_1a6c70916a0df4071830627cc65b734df4" kind="function"><name>setActiveTimeColor</name></member>
+    <member refid="namespacegame_1_1i2c_1a53e720c22085d10f15012190ea3f8ab9" kind="function"><name>setPassiveTimeColor</name></member>
+    <member refid="namespacegame_1_1i2c_1a16a8d8b75765d12d7dfd792a454d7f18" kind="function"><name>getActiveTimeColor</name></member>
+    <member refid="namespacegame_1_1i2c_1aff5b5c1346a69dfa85f464da0d1df030" kind="function"><name>getPassiveTimeColor</name></member>
+    <member refid="namespacegame_1_1i2c_1a6cc044fcf10970e62f6e7d8a8eea7dbd" kind="function"><name>setBallsLeds</name></member>
+    <member refid="namespacegame_1_1i2c_1a2988a923a2bb6a9d2f4c8e7409e0aded" kind="function"><name>setHeadsetColor</name></member>
+    <member refid="namespacegame_1_1i2c_1aa72744d8ce34e48fe75bd216ac66d0e4" kind="function"><name>initialize</name></member>
+    <member refid="namespacegame_1_1i2c_1a3a43a96db3ce557e507f3c08617b19c5" kind="function"><name>startgame</name></member>
+  </compound>
+  <compound refid="namespacegame_1_1_player" kind="namespace"><name>game::Player</name>
+  </compound>
+  <compound refid="namespaceneopixel" kind="namespace"><name>neopixel</name>
+  </compound>
+  <compound refid="namespaceweb_back" kind="namespace"><name>webBack</name>
+    <member refid="namespaceweb_back_1a54be33696aa638ea93d5b7bd190da106" kind="variable"><name>noFurtherRequests</name></member>
+    <member refid="namespaceweb_back_1afe63fea7be31b0200b496d08bc6b517d" kind="variable"><name>app</name></member>
+    <member refid="namespaceweb_back_1a0514aabed091ee5e2f35766eb01eced6" kind="variable"><name>debug</name></member>
+    <member refid="namespaceweb_back_1a33f3d888c60d659e953c90c18f532678" kind="variable"><name>use_reloader</name></member>
+    <member refid="namespaceweb_back_1a47e597222ad8ae582ae1306ab3d3d395" kind="variable"><name>threaded</name></member>
+    <member refid="namespaceweb_back_1aa3905888cf38ed1374d1adc98c45bca6" kind="function"><name>send_css</name></member>
+    <member refid="namespaceweb_back_1a8d2fb2f4dc56c083de514b9c0d43d7fb" kind="function"><name>send_pics</name></member>
+    <member refid="namespaceweb_back_1a48f3c269d1d9ba6b7edf365414bbaea8" kind="function"><name>send_pics_stats</name></member>
+    <member refid="namespaceweb_back_1a36644ac58627cbb02b55457d97a7f915" kind="function"><name>send_js</name></member>
+    <member refid="namespaceweb_back_1adac705fce6dde6308b579f703b3b627f" kind="function"><name>send_fonts</name></member>
+    <member refid="namespaceweb_back_1aca1190d89e9c6bc7c6624cad8c032bb1" kind="function"><name>index</name></member>
+    <member refid="namespaceweb_back_1acb08cb868c656ab890c47f4a8862015b" kind="function"><name>inGame</name></member>
+    <member refid="namespaceweb_back_1a251f9bc8dbc3de8ac0e0aa681388d52d" kind="function"><name>stats</name></member>
+    <member refid="namespaceweb_back_1aaf96757aed7ac16a95fea349a78f9faf" kind="function"><name>startInfo</name></member>
+    <member refid="namespaceweb_back_1a586d6d3a74f2479f390486276186a626" kind="function"><name>gameInfo</name></member>
+    <member refid="namespaceweb_back_1a2966f9911dbe98fd9e2cc63ce6458731" kind="function"><name>debug</name></member>
+    <member refid="namespaceweb_back_1a5f030b0ffd219cb8152121a951e8767a" kind="function"><name>startgame</name></member>
+    <member refid="namespaceweb_back_1a37f3ed1601cc23aa04e72ebf237ba3c5" kind="function"><name>statinfo</name></member>
+  </compound>
+  <compound refid="____main_____8py" kind="file"><name>__main__.py</name>
+  </compound>
+  <compound refid="____init_____8py" kind="file"><name>__init__.py</name>
+  </compound>
+  <compound refid="game_8py" kind="file"><name>game.py</name>
+  </compound>
+  <compound refid="i2c_8py" kind="file"><name>i2c.py</name>
+  </compound>
+  <compound refid="_player_8py" kind="file"><name>Player.py</name>
+  </compound>
+  <compound refid="web_back_8py" kind="file"><name>webBack.py</name>
+  </compound>
+  <compound refid="dir_37c6514aeece95293041e34c0f2e0784" kind="dir"><name>/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game</name>
+  </compound>
+</doxygenindex>

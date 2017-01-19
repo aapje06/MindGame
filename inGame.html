@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title id="titleName">MindGame</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<script src="/js/jquery-3.1.1.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+	.bg-1
+	{
+		background-color: #2a9236 !important;
+		color: #fff !important;
+	}
+	.bg-2
+	{
+		background-color: #fff
+	}
+	.textbox-bg
+	{
+		background-color: #f2f2f2;
+	}
+	.jumbotron{
+        padding: 10px 10px;
+        border-radius:70px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        border-color: #000;
+        border-style: solid;
+        border-width: 1px;
+    }
+	.panel-default{
+		border-color: #999;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding: 5px;
+		background-color: transparent;
+		height: 80%
+	}
+	
+	.progress-bar-vertical {
+	  width: 20px;
+	  min-height: 100px;
+	  display: flex;
+	  align-items: flex-end;
+	  float: center;
+	  border-style: solid;
+	  border-color: #999;
+	  border-width: 1px;
+	}
+
+	.progress-bar-vertical .progress-bar {
+	  width: 100%;
+	  height: 100%;
+
+	  -webkit-transition: height 0.6s ease;
+	  -o-transition: height 0.6s ease;
+	  transition: height 0.6s ease;
+	}
+	.progress-bar{
+		background-color: #2a9236;
+	}
+	.centerDiv{
+		display: table;
+		margin: 0 auto;
+	}
+	.centerDiv, .row, .col-xs-4, .progress-bar-vertical, .table{
+		height: 100%;
+	}
+	.col-sm-6{
+		height: 300px;
+	}
+
+	.ball{
+		height: 12.5%;
+
+	}
+	.fa{
+		color: #2a9236;
+	}
+
+
+	/* Outer */
+	.popup {
+	    width:100%;
+	    height:100%;
+	    display:none;
+	    position:fixed;
+	    top:0px;
+	    left:0px;
+	    background:rgba(0,0,0,0.75);
+	}
+
+	/* Inner */
+	.popup-inner {
+	    max-width:700px;
+	    width:90%;
+	    padding:40px;
+	    position:absolute;
+	    top:50%;
+	    left:50%;
+	    -webkit-transform:translate(-50%, -50%);
+	    transform:translate(-50%, -50%);
+	    /*box-shadow:0px 2px 6px rgba(0,0,0,1);*/
+	    border-radius:3px;
+	    /*background:#fff;*/
+	    background: transparent;
+	    text-align: center;
+	    color: #fff;
+	}
+
+	.countDownText{
+		font-size: 700%;
+	}
+
+
+	@media screen and (max-width: 768px) {
+    .col-sm-6{
+		height: 200px;
+	}
+	.container{
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+	}
+
+</style>
+<body class="bg-2">
+
+	<div class="jumbotron text-center bg-1">
+        <div class="row text-center">
+            <!--logo div-->
+          <div class="col-sm-2" style="vertical-align: center !important;">
+                <img src="pics/logow.png" style="height: 130px;">
+          </div>
+          <div class="col-sm-8 text-center">
+              <h1>MindGame</h1>
+              <p>Practice your mindset</p>
+          </div>
+        </div>
+    </div>
+
+	<div class="container">
+	  	<div class="row text-center">
+
+		  	<!--Player 1 panel -->
+		    <div class="col-sm-6">
+		     	<h3 id = "player1name">Player 1</h3>
+		     	<div class="panel panel-default">
+		     		<div class="row" style="height: 10% !important;">
+			     		<div class="col-xs-4" style="height: 10% !important;">
+			     			<p>Time</p>
+			     		</div>
+			     		<div class="col-xs-4" style="height: 10% !important;">
+			     			<p id="p1points">Points: 0</p>
+			     		</div>
+			     		<div class="col-xs-4" style="height: 10% !important;">
+			     			<p>Stress</p>
+			     		</div>
+		     		</div>
+		     		<div class="row">
+			     		<div class="col-xs-4" style="height: 90% !important;">
+			     			<div class="centerDiv">
+				     			<div class="progress progress-bar-vertical">
+								  <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" id="p1TimeBar" style="height: 70%;">
+								  </div>
+								</div>
+							</div>
+			     		</div>
+			     		<div class="col-xs-4" style="height: 90% !important;">
+			     			<div id="b11" class="row ball"><i class="fa fa-circle"></i></div>
+			     			<div id="b12" class="row ball"><i class="fa fa-dot-circle-o"></i></div>
+			     			<div id="b13" class="row ball"><i class="fa fa-circle"></i></div>
+			     			<div id="b14" class="row ball"><i class="fa fa-circle-o"></i></div>
+			     			<div id="b15" class="row ball"><i class="fa fa-circle-o"></i></div>
+			     			<div id="b16" class="row ball"><i class="fa fa-circle"></i></div>
+			     			<div id="b17" class="row ball"><i class="fa fa-dot-circle-o"></i></div>
+			     			<div id="b18" class="row ball"><i class="fa fa-circle"></i></div>
+			     		</div>
+			     		<div class="col-xs-4" style="height: 90% !important;">
+			     			<div class="centerDiv">
+				     			<div class="progress progress-bar-vertical">
+								  <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" id="p1StressBar" style="height: 40%;">
+								  </div>
+								</div>
+							</div>
+			     		</div>
+		     		</div>
+		      	</div>
+		    </div>
+
+		    <!--Player 2 panel -->
+		    <div class="col-sm-6">
+		      	<h3 id="player2name">Player 2</h3>
+		      	<div class="panel panel-default">
+		      		<div class="row" style="height: 10% !important;">
+			     		<div class="col-xs-4" style="height: 10% !important;">
+			     			<p>Time</p>
+			     		</div>
+			     		<div class="col-xs-4" style="height: 10% !important;">
+			     			<p id="p2points">Points: 0</p>
+			     		</div>
+			     		<div class="col-xs-4" style="height: 10% !important;">
+			     			<p>Stress</p>
+			     		</div>
+		     		</div>
+				    <div class="row">
+			     		<div class="col-xs-4" style="height: 90% !important;">
+			     			<div class="centerDiv">
+				     			<div class="progress progress-bar-vertical">
+								  <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" id="p2TimeBar" style="height: 30%;">
+								  </div>
+								</div>
+							</div>
+			     		</div>
+			     		<div class="col-xs-4" style="height: 90% !important;">
+			     			<div id="b21" class="row ball"><i class="fa fa-circle"></i></div>
+			     			<div id="b22" class="row ball"><i class="fa fa-dot-circle-o"></i></div>
+			     			<div id="b23" class="row ball"><i class="fa fa-circle"></i></div>
+			     			<div id="b24" class="row ball"><i class="fa fa-circle-o"></i></div>
+			     			<div id="b25" class="row ball"><i class="fa fa-circle-o"></i></div>
+			     			<div id="b26" class="row ball"><i class="fa fa-circle"></i></div>
+			     			<div id="b27" class="row ball"><i class="fa fa-dot-circle-o"></i></div>
+			     			<div id="b28" class="row ball"><i class="fa fa-circle"></i></div>
+		     			</div>
+			     		<div class="col-xs-4" style="height: 90% !important;">
+			     			<div class="centerDiv">
+				     			<div class="progress progress-bar-vertical">
+								  <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" id="p2StressBar" style="height: 80%;">
+								  </div>
+								</div>
+							</div>
+			     		</div>
+		     		</div>
+		      	</div>
+		    </div>
+	    </div>
+
+	    <div class="row" id="debug">
+	    </div>
+
+	    <div class="row">
+
+	    	<!--<a class="btn" data-popup-open="popup-1" href="#">Open Popup #1</a>-->
+		      <div class="popup" data-popup="countDown">
+			    <div class="popup-inner">
+			        <p class="countDownText" id="countdownlabel">Wow! This is Awesome! (Popup #1)</p>
+			        <!--<p><a data-popup-close="popup-1" href="#">Close</a></p>-->
+			    </div>
+			</div>
+
+
+			<div class="popup" data-popup="Finish">
+			    <div class="popup-inner">
+			        <p class="countDownText" id="finishlabel">Winner</p>
+			        <form method="get" action="/">
+                      <button type="button btn-block" class="btn btn-block bg-1" style="width: 200px; margin-left: -100px; left: 50%; position:relative;">Return to main page</button>
+                  	</form>
+			        <!--<p><a data-popup-close="popup-1" href="#">Close</a></p>-->
+			    </div>
+			</div>
+		</div>
+	<!--ending of container -->
+	</div>
+
+</body>
+
+<script type="text/javascript">
+
+
+	/*$(function() {
+    //----- OPEN
+    $('[data-popup-open]').on('click', function(e)  {
+        var targeted_popup_class = jQuery(this).attr('data-popup-open');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+
+        e.preventDefault();
+    });
+
+    //----- CLOSE
+    $('[data-popup-close]').on('click', function(e)  {
+        var targeted_popup_class = jQuery(this).attr('data-popup-close');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+
+        e.preventDefault();
+    });
+});*/
+
+
+
+
+
+
+
+	document.getElementById("titleName").innerHTML = "MindGame - " + window.location.pathname.substring('/inGame/'.length);
+	if(typeof(EventSource) !== "undefined") {
+        var source = new EventSource("/inGameInfo/" + window.location.pathname.substring('/inGame/'.length));
+        
+        source.onmessage = function(event) {
+            //console.log(event.data);
+        };
+        source.addEventListener('playerInfo', function(e){
+			//console.log("player data: " + e.data);
+            var players = JSON.parse(e.data).players;
+            document.getElementById("player1name").innerHTML = players[0].name;
+            document.getElementById("player2name").innerHTML = players[1].name;
+            var p1time = players[0].time / players[1].maxTime * 100;
+            document.getElementById("p1TimeBar").style.height = p1time + "%";
+            var p2time = players[1].time / players[1].maxTime * 100;
+            document.getElementById("p2TimeBar").style.height = p2time + "%";
+
+
+
+            var p1stress = players[0].stress;
+            document.getElementById("p1StressBar").style.height = p1stress + "%";
+            var p2stress = players[1].stress;
+            document.getElementById("p2StressBar").style.height = p2stress + "%";
+
+            var p1points = players[0].points;
+            document.getElementById("p1points").innerHTML = "Points: " + p1points;
+            var p2points = players[1].points;
+            document.getElementById("p2points").innerHTML = "Points: " + p2points;
+
+            var ballen1 = players[0].balls
+            var ballen2 = players[1].balls
+            for (var i=1;i<9;i++){
+            	var name = "b1" + (i);
+            	//console.log(name);
+            	if (ballen1 & 1<<(i-1))
+            		document.getElementById((name)).innerHTML = '<i class="fa fa-circle"></i>';
+            	else
+            		document.getElementById((name)).innerHTML = '<i class="fa fa-circle-o"></i>';
+            	name = "b2" + i;
+            	if (ballen2 & 1<<(i-1))
+            		document.getElementById((name)).innerHTML = '<i class="fa fa-circle"></i>';
+            	else
+            		document.getElementById((name)).innerHTML = '<i class="fa fa-circle-o"></i>';
+            }
+
+
+            if(p1time == 0 && p2time == 0){
+            	if (p1points != p2points){
+	            	if(p1points> p2points){
+	            		document.getElementById("finishlabel").innerHTML = players[0].name + " won with " + p1points+" points!!"
+	            	}else{
+	            		document.getElementById("finishlabel").innerHTML = players[1].name + " won with " + p2points+" points!!"
+	            	}
+	            }else{
+	            	document.getElementById("finishlabel").innerHTML = "It's a draw with " + p1points+" points!!"
+	            }
+	            $('[data-popup="Finish"]').fadeIn(350);
+            }
+
+        },false);
+
+        source.addEventListener('debug', function(e){
+            //console.log("debug data: " + e.data);
+            var debug = JSON.parse(e.data);
+            var result = '';
+            for (var i = 0 ; i < debug.debugging.length; i++){
+                result += debug.debugging[i].line + '<br/>';
+            }
+            //document.getElementById("debug").innerHTML = result;
+        },false);
+
+        var countdownFirst = true;
+        var countdownclosefirst = true;
+
+        source.addEventListener('countdown', function(e){
+            console.log("countdown data: " + e.data);
+            if(countdownFirst == true && e.data != 0){
+            	countdownFirst = false;
+            	console.log("opening popup: " + countdownFirst)
+            	var targeted_popup_class = "countDown";
+        		$('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+            }
+            document.getElementById("countdownlabel").innerHTML = e.data;
+            if(e.data == 0 && countdownclosefirst == true){
+            	console.log("closing popup")
+            	var targeted_popup_class = "countDown";
+        		$('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+            	countdownclosefirst = false;
+            }
+        },false);
+    } else {
+        
+        document.getElementById("debug").innerHTML = "<h5>Sorry, your browser does not support server-sent events...</h5>";
+    }
+
+
+    /*$(window).unload( function() {
+    	alert("closing")
+	   $.post("/stopGame",
+                {
+                    gn: window.location.pathname.substring('/inGame/'.length).replace("%20", " ")
+                },
+                function(data,status){
+                    if (data == "ok"){
+                       console.log("game deleted");
+                    }
+                });
+	   page_unload();
+	});*/
+
+   	window.addEventListener("beforeunload", function(e){
+   		$.post("/stopGame",
+                {
+                    gn: window.location.pathname.substring('/inGame/'.length).replace("%20", " ")
+                },
+                function(data,status){
+                    if (data == "ok"){
+                       console.log("game deleted");
+                    }
+                });
+	}, false);
+</script>
+</html>

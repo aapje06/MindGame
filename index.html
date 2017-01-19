@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MindGame</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery-3.1.1.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+    .bg-1
+    {
+        background-color: #2a9236 !important;
+        color: #fff !important;
+    }
+    .bg-2
+    {
+        background-color: #fff
+    }
+    .textbox-bg
+    {
+        background-color: #f2f2f2;
+    }
+    .bottom-margin
+    {
+        margin-bottom: 5px;
+    }
+    .inputbox
+    {
+        width: 100% !important;
+        margin-top: 2px;
+
+    }
+    .button-center
+    {
+        left: 50%;
+    }
+    .jumbotron{
+        padding: 10px 10px;
+        border-radius:70px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        border-color: #000;
+        border-style: solid;
+        border-width: 1px;
+    }
+    .nopadding{
+        padding: 0px 0px 0px 0px;
+    }
+    .nomargin{
+        margin: 8px 0px 5px 0px;
+    }
+    .selected-btn{
+        background-color: #2a9236;
+    }
+    .panel-default{
+        border-radius: 15px;
+        border-color: #999;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 5px;
+        background-color: transparent;
+    }
+    .table th, .table td{
+        border-color: #999 !important;
+        text-align: center !important;
+    }
+
+</style>
+<body class="bg-2">
+
+    <div class="jumbotron text-center bg-1">
+        <div class="row text-center">
+            <!--logo div-->
+          <div class="col-sm-2" style="vertical-align: center !important;">
+                <img src="pics/logow.png" style="height: 130px;">
+          </div>
+          <div class="col-sm-8 text-center">
+              <h1>MindGame</h1>
+              <p>Practice your mindset</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+      <div class="row text-center">
+
+      <!--Highscore panel -->
+        <div class="col-sm-4">
+          <h3>Highscore</h3>
+          <div class="panel panel-default">
+            <div id="Highscores" style="margin-bottom: 0px;">Loading highscore...</div>
+            <form method="get" action="/stats" style="margin-top: 0px;">
+                      <button type="button btn-block" class="btn btn-block bg-1" style="margin-top: 0px;">View more statistics</button>
+                  </form>
+                
+          </div>
+        </div>
+
+        <!--start game panel -->
+        <div class="col-sm-4">
+          <h3>Start game</h3>
+          <div class="panel panel-default">
+              <form class="form-inline" onsubmit="return StartGame()">
+                <input type="text" id="p1n" class="form-control inputbox textbox-bg bottom-margin" maxlength="40" placeholder="Name Player 1" required>
+                <input type="text" id="p2n" class="form-control inputbox textbox-bg bottom-margin" maxlength="40" placeholder="Name Player 2" required>             
+                <input type="text" id="gn" class="form-control inputbox textbox-bg bottom-margin" maxlength="40" placeholder="Game Name" required>
+                <!--<input type="password" id="pw" class="form-control inputbox textbox-bg bottom-margin" maxlength="40" placeholder="Password" required>-->
+                <h4 class="nomargin">Game mode:</h4>
+                <div class="btn-group nopadding bottom-margin">
+                  <button id="btn-easy" onclick="highlightButton('btn-easy')" type="button" class="btn btn-default">Easy</button>
+                  <button id="btn-normal" onclick="highlightButton('btn-normal')" type="button" class="btn btn-default selected-btn" style="color: #fff;">Normal</button>
+                  <button id="btn-hard" onclick="highlightButton('btn-hard')" type="button" class="btn btn-default">Hard</button>
+                </div>
+
+                <h4 class="nomargin">Light mode:</h4>
+                <div class="btn-group nopadding bottom-margin">
+                  <button id="btn-subtile" onclick="highlightButton('btn-subtile')" type="button" class="btn btn-default selected-btn" style="color: #fff;">Subtile</button>
+                  <button id="btn-extreme" onclick="highlightButton('btn-extreme')" type="button" class="btn btn-default">Extreme</button>
+                </div>
+                <button type="button btn-block" class="btn btn-block bg-1" style="margin-top: 8px;">Start</button>
+              </form>
+          </div>
+        </div>
+
+        <!--current game panel -->
+        <div class="col-sm-4">
+          <h3>Current games</h3> 
+          <div class="panel panel-default" id="Games">
+                Loading games...
+          </div>
+        </div>
+      </div>
+
+
+      <!--<div class="row text-center">
+      <div class="col-sm-4"></div>
+          <div class="col-sm-4">
+              <h3>Statistics about MindGame</h3>
+              <div class="panel panel-default">
+                  <form method="get" action="/stats">
+                      Go to the statistics page where you can find some detailed numbers about the game.
+                      <button type="button btn-block" class="btn btn-block bg-1">View Statistics</button>
+                  </form>
+              </div>
+          </div>
+      </div>-->
+
+    <!--ending of container -->
+    </div>
+
+</body>
+<script type="text/javascript">
+    if(typeof(EventSource) !== "undefined") {
+        var source = new EventSource("/startInfo");
+
+        source.onmessage = function(event) {
+            console.log(event.data);
+        };
+
+        source.addEventListener('highscore', function(e){
+            console.log("highscore data: " + e.data);
+            var highscores = JSON.parse(e.data);
+            if(highscores.highscore.length >0){
+                var result = '<table class="table" style="margin-bottom: 0px;"><thead><tr><th>Name</th><th>Score</th></tr></thead><tbody>';
+                for (var i = 0 ; i < highscores.highscore.length; i++){
+                    result += '<tr><td>' + highscores.highscore[i].Name + '</td><td>' + highscores.highscore[i].Score + '</td></tr>';
+                }
+                result+= '</tbody></table>';
+                document.getElementById("Highscores").innerHTML = result;
+            }
+            else{
+                document.getElementById("Highscores").innerHTML = "No Highscores at the moment...";
+            }
+        },false);
+
+        source.addEventListener('Game', function(e){
+            console.log("Game data: " + e.data);
+            var games = JSON.parse(e.data);
+            if (games.Games.length != 0){
+                var result = '<table class="table"><thead><tr><th>Name</th><th>Spectate</th></tr></thead><tbody>';
+                for (var i = 0 ; i < games.Games.length; i++){
+                    if(games.Games[i].Running == "True"){
+                    result += '<tr><td><b>' + games.Games[i].Gamename + '</b></td><td><a href="/inGame/' + games.Games[i].Gamename + '" class="btn btn-block bg-1" role="button">Spectate</a></td></tr>';
+                    }else{
+                        result += '<tr><td>' + games.Games[i].Gamename + '</td><td> <a href="/inGame/' + games.Games[i].Gamename + '" class="btn btn-block bg-1" role="button">Spectate</a> </td></tr>';
+                    }
+                }
+                result+= '</tbody></table>';
+                document.getElementById("Games").innerHTML = result;
+            }else{
+                document.getElementById("Games").innerHTML = "no games running at the moment."
+            }
+        },false);
+    } else {
+        document.getElementById("Highscores").innerHTML = "<h5>Sorry, your browser does not support server-sent events...</h5>";
+        document.getElementById("Games").innerHTML = "<h5>Sorry, your browser does not support server-sent events...</h5>";
+    }
+
+    
+    var LightMode = 'subtile'
+    var GameMode = 'normal';
+
+    function highlightButton(button)
+    {
+        if (button == "btn-easy"){
+            document.getElementById("btn-easy").style.backgroundColor = "#2a9236";
+            document.getElementById("btn-easy").style.color = "#fff";
+            document.getElementById("btn-normal").style.backgroundColor = "#f2f2f2";            
+            document.getElementById("btn-normal").style.color = "#000";
+            document.getElementById("btn-hard").style.backgroundColor = "#f2f2f2";
+            document.getElementById("btn-hard").style.color = "#000";
+            GameMode = 'easy';
+        }
+        if (button == "btn-normal"){
+            document.getElementById("btn-easy").style.backgroundColor = "#f2f2f2";
+            document.getElementById("btn-normal").style.backgroundColor = "#2a9236";
+            document.getElementById("btn-hard").style.backgroundColor = "#f2f2f2";
+            document.getElementById("btn-easy").style.color = "#000";
+            document.getElementById("btn-normal").style.color = "#fff";
+            document.getElementById("btn-hard").style.color = "#000";
+            GameMode = 'normal';
+        }
+        if (button == "btn-hard"){
+            document.getElementById("btn-easy").style.backgroundColor = "#f2f2f2";
+            document.getElementById("btn-normal").style.backgroundColor = "#f2f2f2";
+            document.getElementById("btn-hard").style.backgroundColor = "#2a9236";
+            document.getElementById("btn-easy").style.color = "#000";
+            document.getElementById("btn-normal").style.color = "#000";
+            document.getElementById("btn-hard").style.color = "#fff";
+            GameMode = 'hard';
+        }
+        if (button == "btn-subtile"){
+            document.getElementById("btn-subtile").style.backgroundColor = "#2a9236";
+            document.getElementById("btn-extreme").style.backgroundColor = "#f2f2f2";
+            document.getElementById("btn-subtile").style.color = "#fff";
+            document.getElementById("btn-extreme").style.color = "#000";
+            LightMode = 'subtile';
+        }
+        if (button == "btn-extreme"){
+            document.getElementById("btn-subtile").style.backgroundColor = "#f2f2f2";
+            document.getElementById("btn-extreme").style.backgroundColor = "#2a9236";
+            document.getElementById("btn-subtile").style.color = "#000";
+            document.getElementById("btn-extreme").style.color = "#fff";
+            LightMode = 'extreme';
+        }
+        return false;
+    }
+
+    function StartGame(){
+        if(document.getElementById("p1n").value !== "" &&
+            document.getElementById("p2n").value !== "" &&
+            document.getElementById("gn").value !== "" //&&
+            //document.getElementById("pw").value !== ""
+            ){
+                //window.location.href = "inGame";
+                $.post("/startGame",
+                {
+                    p1n: document.getElementById("p1n").value,
+                    p2n: document.getElementById("p2n").value,
+                    gn: document.getElementById("gn").value,
+                    pw: "PASSWOORD",//document.getElementById("pw").value,
+                    gm: GameMode,
+                    lm: LightMode
+                },
+                function(data,status){
+                    if (data == "nameExist"){
+                        alert("The game name already exist, please choose another name.");
+                    }
+
+                    else if(data == "gameRunning"){
+                        alert("There is already a game running on the device, please retry when no games are running.");
+                    }
+                    else if (data == "ok"){
+                        window.location.href = "inGame/" + document.getElementById("gn").value;
+                    }
+                });
+            }
+            return false;
+    }
+
+    /*$('.form-inline').on('submit', function(){
+        alert("test");
+        window.location.href = "./inGame.php";
+    });*/
+    
+</script>
+</html>

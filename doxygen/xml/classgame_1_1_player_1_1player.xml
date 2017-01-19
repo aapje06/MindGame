@@ -1,0 +1,524 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="classgame_1_1_player_1_1player" kind="class" language="Python" prot="public">
+    <compoundname>game::Player::player</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgame_1_1_player_1_1player_1aa5998168cabfb2b2e41151349077812c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="14" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1_player_1_1player_1a70c092a6aebace0b1ea406e14da78a40" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="17" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1_player_1_1player_1aa820f7e11b025b06f4eeb0ad7581ad34" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>maxTime</definition>
+        <argsstring></argsstring>
+        <name>maxTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="24" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1_player_1_1player_1aaf5ef5a17b53e9997c837b07015589de" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>GameMode</definition>
+        <argsstring></argsstring>
+        <name>GameMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="25" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1_player_1_1player_1adbeef4da431e7d5e416c32ee188659f7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>LightMode</definition>
+        <argsstring></argsstring>
+        <name>LightMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="26" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1_player_1_1player_1aed45ca508d997dd992682abff8790bde" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pin</definition>
+        <argsstring></argsstring>
+        <name>pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="27" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1_player_1_1player_1a32238a7b64cb50d84a8aaa16991856e7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>stress</definition>
+        <argsstring></argsstring>
+        <name>stress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="28" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1_player_1_1player_1a07f043935f9198f29c102e457f37e2a7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>balls</definition>
+        <argsstring></argsstring>
+        <name>balls</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="29" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1_player_1_1player_1ab9a89211ecb71d18bbd259853fda1c54" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>points</definition>
+        <argsstring></argsstring>
+        <name>points</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="30" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1_player_1_1player_1abdbd1aa902babb2b61d19e44dcd88412" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>timethread</definition>
+        <argsstring></argsstring>
+        <name>timethread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="31" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1_player_1_1player_1a3924cdbb3a2e56cd1ff60d8562e29551" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>updatethread</definition>
+        <argsstring></argsstring>
+        <name>updatethread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="32" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1_player_1_1player_1a36c4719a5155181787e577197de2f4fd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>updateloop</definition>
+        <argsstring></argsstring>
+        <name>updateloop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="33" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1_player_1_1player_1aeb2f8044324fe09477addfe8b6cc2ba2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>holescores</definition>
+        <argsstring></argsstring>
+        <name>holescores</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="34" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1_player_1_1player_1a2af8a98688fb3fdd4af4ccf4a3aeeb9a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>brilkleur</definition>
+        <argsstring></argsstring>
+        <name>brilkleur</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="35" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1_player_1_1player_1a7414c080ff0224b59be39eb949eec0e4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>blinkBril</definition>
+        <argsstring></argsstring>
+        <name>blinkBril</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="36" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1_player_1_1player_1a64e24d506f270a01dde24d266af439dd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>blinkOn</definition>
+        <argsstring></argsstring>
+        <name>blinkOn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="37" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1_player_1_1player_1ab587deac2ae34c126e6222afedb790ea" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>game</definition>
+        <argsstring></argsstring>
+        <name>game</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="38" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgame_1_1_player_1_1player_1a027a09f90ea572dba24b1b7840c0ddf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def __init__</definition>
+        <argsstring>(self, gameobj, GameMode, LightMode, Name, pin)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>gameobj</type>
+          <defname>gameobj</defname>
+        </param>
+        <param>
+          <type><ref refid="classgame_1_1_player_1_1player_1aaf5ef5a17b53e9997c837b07015589de" kindref="member">GameMode</ref></type>
+          <defname>GameMode</defname>
+        </param>
+        <param>
+          <type><ref refid="classgame_1_1_player_1_1player_1adbeef4da431e7d5e416c32ee188659f7" kindref="member">LightMode</ref></type>
+          <defname>LightMode</defname>
+        </param>
+        <param>
+          <type><ref refid="classgame_1_1_player_1_1player_1aa5998168cabfb2b2e41151349077812c" kindref="member">Name</ref></type>
+          <defname>Name</defname>
+        </param>
+        <param>
+          <type><ref refid="classgame_1_1_player_1_1player_1aed45ca508d997dd992682abff8790bde" kindref="member">pin</ref></type>
+          <defname>pin</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="13" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="13" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1_player_1_1player_1a1025dee804906a22181c3ea3a6f4fadc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def startTime</definition>
+        <argsstring>(self)</argsstring>
+        <name>startTime</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="40" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="40" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1_player_1_1player_1a28e064aedf0753d6d5c30e46c4f791b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def timeLooping</definition>
+        <argsstring>(self)</argsstring>
+        <name>timeLooping</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="56" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="56" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1_player_1_1player_1ac0084ae4f98be3d62cf166d2161f3234" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def updateLooping</definition>
+        <argsstring>(self)</argsstring>
+        <name>updateLooping</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="93" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="93" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1_player_1_1player_1abb1fe44b5f3819007f0e499019e915e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def endGame</definition>
+        <argsstring>(self)</argsstring>
+        <name>endGame</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="146" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="146" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1_player_1_1player_1a2aae31c5ae0c817b975b2dc4ae470e98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def writeToSql</definition>
+        <argsstring>(self, sql)</argsstring>
+        <name>writeToSql</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sql</type>
+          <defname>sql</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="161" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="161" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1_player_1_1player_1acd6fe061d9978ebb27c7fd1be56f2052" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def setAllBallsLeds</definition>
+        <argsstring>(self, R, G)</argsstring>
+        <name>setAllBallsLeds</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>R</type>
+          <defname>R</defname>
+        </param>
+        <param>
+          <type>G</type>
+          <defname>G</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="169" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="169" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1_player_1_1player_1a90c95f354f2194c788f6895a7feae1ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def setBalls</definition>
+        <argsstring>(self, pos)</argsstring>
+        <name>setBalls</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>pos</type>
+          <defname>pos</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="177" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="177" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1_player_1_1player_1a4fea2d8b13f9b59b91d3d14d5c28efc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def setBrilColor</definition>
+        <argsstring>(self, R, G, B)</argsstring>
+        <name>setBrilColor</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>R</type>
+          <defname>R</defname>
+        </param>
+        <param>
+          <type>G</type>
+          <defname>G</defname>
+        </param>
+        <param>
+          <type>B</type>
+          <defname>B</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="182" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="182" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1_player_1_1player_1a9747e45f935d296c2c0b508127fd7c4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def getBalls</definition>
+        <argsstring>(self)</argsstring>
+        <name>getBalls</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="191" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="191" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1_player_1_1player_1a91720e5fd3a7e677f314a4b26451b864" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def getName</definition>
+        <argsstring>(self)</argsstring>
+        <name>getName</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="200" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="200" bodyend="201"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>object</label>
+      </node>
+      <node id="2">
+        <label>player</label>
+        <link refid="classgame_1_1_player_1_1player"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>object</label>
+      </node>
+      <node id="4">
+        <label>player</label>
+        <link refid="classgame_1_1_player_1_1player"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" line="11" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/Player.py" bodystart="11" bodyend="201"/>
+    <listofallmembers>
+      <member refid="classgame_1_1_player_1_1player_1a027a09f90ea572dba24b1b7840c0ddf2" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>__init__</name></member>
+      <member refid="classgame_1_1_player_1_1player_1a07f043935f9198f29c102e457f37e2a7" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>balls</name></member>
+      <member refid="classgame_1_1_player_1_1player_1a7414c080ff0224b59be39eb949eec0e4" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>blinkBril</name></member>
+      <member refid="classgame_1_1_player_1_1player_1a64e24d506f270a01dde24d266af439dd" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>blinkOn</name></member>
+      <member refid="classgame_1_1_player_1_1player_1a2af8a98688fb3fdd4af4ccf4a3aeeb9a" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>brilkleur</name></member>
+      <member refid="classgame_1_1_player_1_1player_1abb1fe44b5f3819007f0e499019e915e3" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>endGame</name></member>
+      <member refid="classgame_1_1_player_1_1player_1ab587deac2ae34c126e6222afedb790ea" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>game</name></member>
+      <member refid="classgame_1_1_player_1_1player_1aaf5ef5a17b53e9997c837b07015589de" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>GameMode</name></member>
+      <member refid="classgame_1_1_player_1_1player_1a9747e45f935d296c2c0b508127fd7c4a" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>getBalls</name></member>
+      <member refid="classgame_1_1_player_1_1player_1a91720e5fd3a7e677f314a4b26451b864" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>getName</name></member>
+      <member refid="classgame_1_1_player_1_1player_1aeb2f8044324fe09477addfe8b6cc2ba2" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>holescores</name></member>
+      <member refid="classgame_1_1_player_1_1player_1adbeef4da431e7d5e416c32ee188659f7" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>LightMode</name></member>
+      <member refid="classgame_1_1_player_1_1player_1aa820f7e11b025b06f4eeb0ad7581ad34" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>maxTime</name></member>
+      <member refid="classgame_1_1_player_1_1player_1aa5998168cabfb2b2e41151349077812c" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>Name</name></member>
+      <member refid="classgame_1_1_player_1_1player_1aed45ca508d997dd992682abff8790bde" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>pin</name></member>
+      <member refid="classgame_1_1_player_1_1player_1ab9a89211ecb71d18bbd259853fda1c54" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>points</name></member>
+      <member refid="classgame_1_1_player_1_1player_1acd6fe061d9978ebb27c7fd1be56f2052" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>setAllBallsLeds</name></member>
+      <member refid="classgame_1_1_player_1_1player_1a90c95f354f2194c788f6895a7feae1ad" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>setBalls</name></member>
+      <member refid="classgame_1_1_player_1_1player_1a4fea2d8b13f9b59b91d3d14d5c28efc0" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>setBrilColor</name></member>
+      <member refid="classgame_1_1_player_1_1player_1a1025dee804906a22181c3ea3a6f4fadc" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>startTime</name></member>
+      <member refid="classgame_1_1_player_1_1player_1a32238a7b64cb50d84a8aaa16991856e7" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>stress</name></member>
+      <member refid="classgame_1_1_player_1_1player_1a70c092a6aebace0b1ea406e14da78a40" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>time</name></member>
+      <member refid="classgame_1_1_player_1_1player_1a28e064aedf0753d6d5c30e46c4f791b5" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>timeLooping</name></member>
+      <member refid="classgame_1_1_player_1_1player_1abdbd1aa902babb2b61d19e44dcd88412" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>timethread</name></member>
+      <member refid="classgame_1_1_player_1_1player_1a36c4719a5155181787e577197de2f4fd" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>updateloop</name></member>
+      <member refid="classgame_1_1_player_1_1player_1ac0084ae4f98be3d62cf166d2161f3234" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>updateLooping</name></member>
+      <member refid="classgame_1_1_player_1_1player_1a3924cdbb3a2e56cd1ff60d8562e29551" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>updatethread</name></member>
+      <member refid="classgame_1_1_player_1_1player_1a2aae31c5ae0c817b975b2dc4ae470e98" prot="public" virt="non-virtual"><scope>game::Player::player</scope><name>writeToSql</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

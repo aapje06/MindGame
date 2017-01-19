@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="classgame_1_1game_1_1_game" kind="class" language="Python" prot="public">
+    <compoundname>game::game::Game</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classgame_1_1game_1_1_game_1a5386ee402dfe77ffb134697b75f81e26" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>player1</definition>
+        <argsstring></argsstring>
+        <name>player1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" line="8" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1game_1_1_game_1a49f9ad8e7cfbcb84c2669fb43958df42" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>player2</definition>
+        <argsstring></argsstring>
+        <name>player2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" line="9" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1game_1_1_game_1aaf5ef5a17b53e9997c837b07015589de" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>GameMode</definition>
+        <argsstring></argsstring>
+        <name>GameMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" line="10" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1game_1_1_game_1a68bcdfccc99b6ac8189450754da36f78" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>lightMode</definition>
+        <argsstring></argsstring>
+        <name>lightMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" line="11" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1game_1_1_game_1acb971b832c5f8a89e9995caaee26a1df" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>countdown</definition>
+        <argsstring></argsstring>
+        <name>countdown</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" line="12" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1game_1_1_game_1aa850ae5126b39a75859039aa84c3a577" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>p1</definition>
+        <argsstring></argsstring>
+        <name>p1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" line="13" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgame_1_1game_1_1_game_1a9099c7c12dde5f81f4d3ce261da3637c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>p2</definition>
+        <argsstring></argsstring>
+        <name>p2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" line="14" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgame_1_1game_1_1_game_1a84a2c5df02ca5f02dc12bfec660ad82a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def __init__</definition>
+        <argsstring>(self, player1, player2, GameMode, lightMode)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classgame_1_1game_1_1_game_1a5386ee402dfe77ffb134697b75f81e26" kindref="member">player1</ref></type>
+          <defname>player1</defname>
+        </param>
+        <param>
+          <type><ref refid="classgame_1_1game_1_1_game_1a49f9ad8e7cfbcb84c2669fb43958df42" kindref="member">player2</ref></type>
+          <defname>player2</defname>
+        </param>
+        <param>
+          <type><ref refid="classgame_1_1game_1_1_game_1aaf5ef5a17b53e9997c837b07015589de" kindref="member">GameMode</ref></type>
+          <defname>GameMode</defname>
+        </param>
+        <param>
+          <type><ref refid="classgame_1_1game_1_1_game_1a68bcdfccc99b6ac8189450754da36f78" kindref="member">lightMode</ref></type>
+          <defname>lightMode</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" line="7" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" bodystart="7" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1game_1_1_game_1aa78d70ae2aafa130eaa143ce55887aff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def startGame</definition>
+        <argsstring>(self)</argsstring>
+        <name>startGame</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" line="17" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" bodystart="17" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1game_1_1_game_1aed504f4752749c9ca28461f4628ae5c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def getPlayer1Name</definition>
+        <argsstring>(self)</argsstring>
+        <name>getPlayer1Name</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" line="40" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classgame_1_1game_1_1_game_1acd678d3a250de66662badf84935e5ffb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def getPlayer2Name</definition>
+        <argsstring>(self)</argsstring>
+        <name>getPlayer2Name</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" line="43" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" bodystart="43" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" line="6" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py" bodystart="6" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classgame_1_1game_1_1_game_1a84a2c5df02ca5f02dc12bfec660ad82a" prot="public" virt="non-virtual"><scope>game::game::Game</scope><name>__init__</name></member>
+      <member refid="classgame_1_1game_1_1_game_1acb971b832c5f8a89e9995caaee26a1df" prot="public" virt="non-virtual"><scope>game::game::Game</scope><name>countdown</name></member>
+      <member refid="classgame_1_1game_1_1_game_1aaf5ef5a17b53e9997c837b07015589de" prot="public" virt="non-virtual"><scope>game::game::Game</scope><name>GameMode</name></member>
+      <member refid="classgame_1_1game_1_1_game_1aed504f4752749c9ca28461f4628ae5c3" prot="public" virt="non-virtual"><scope>game::game::Game</scope><name>getPlayer1Name</name></member>
+      <member refid="classgame_1_1game_1_1_game_1acd678d3a250de66662badf84935e5ffb" prot="public" virt="non-virtual"><scope>game::game::Game</scope><name>getPlayer2Name</name></member>
+      <member refid="classgame_1_1game_1_1_game_1a68bcdfccc99b6ac8189450754da36f78" prot="public" virt="non-virtual"><scope>game::game::Game</scope><name>lightMode</name></member>
+      <member refid="classgame_1_1game_1_1_game_1aa850ae5126b39a75859039aa84c3a577" prot="public" virt="non-virtual"><scope>game::game::Game</scope><name>p1</name></member>
+      <member refid="classgame_1_1game_1_1_game_1a9099c7c12dde5f81f4d3ce261da3637c" prot="public" virt="non-virtual"><scope>game::game::Game</scope><name>p2</name></member>
+      <member refid="classgame_1_1game_1_1_game_1a5386ee402dfe77ffb134697b75f81e26" prot="public" virt="non-virtual"><scope>game::game::Game</scope><name>player1</name></member>
+      <member refid="classgame_1_1game_1_1_game_1a49f9ad8e7cfbcb84c2669fb43958df42" prot="public" virt="non-virtual"><scope>game::game::Game</scope><name>player2</name></member>
+      <member refid="classgame_1_1game_1_1_game_1aa78d70ae2aafa130eaa143ce55887aff" prot="public" virt="non-virtual"><scope>game::game::Game</scope><name>startGame</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

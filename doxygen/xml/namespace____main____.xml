@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="namespace____main____" kind="namespace" language="Python">
+    <compoundname>__main__</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace____main_____1a1406f37190e825427440bc020919218a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>go</definition>
+        <argsstring></argsstring>
+        <name>go</name>
+        <initializer>=  <ref refid="classgame_1_1game_1_1_game" kindref="compound">Game</ref>(&quot;piet&quot;,&quot;pol&quot;,&quot;normal&quot;,&quot;subtile&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/__main__.py" line="7" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/__main__.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace____main_____1aaa52a27abaaf72231a84c99f2bfa4283" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gameRunning</definition>
+        <argsstring></argsstring>
+        <name>gameRunning</name>
+        <initializer>=  False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/__main__.py" line="8" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/__main__.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace____main_____1a89a7f6028a19c3dc081cc5f16eb53891" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>db</definition>
+        <argsstring></argsstring>
+        <name>db</name>
+        <initializer>=  MySQLdb.connect(&quot;localhost&quot;,&quot;root&quot;,&quot;root&quot;,&quot;MindGame&quot; )</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/__main__.py" line="36" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/__main__.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace____main_____1af60395b62cdfc4e22c9bee4739bcc464" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dbc</definition>
+        <argsstring></argsstring>
+        <name>dbc</name>
+        <initializer>=  db.cursor()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/__main__.py" line="37" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/__main__.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace____main_____1acf77f6f6ad1fd09466587857fd4b2e7e" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string sql</definition>
+        <argsstring></argsstring>
+        <name>sql</name>
+        <initializer>=  &quot;DELETE FROM <ref refid="classgame_1_1game_1_1_game" kindref="compound">Game</ref>;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/__main__.py" line="38" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/__main__.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace____main_____1ae3f5dd704a78b1b22fbf6672452aff3e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>thread</definition>
+        <argsstring></argsstring>
+        <name>thread</name>
+        <initializer>=  Thread(target = <ref refid="namespace____main_____1a2b75075b3fab588340f99971f29de8da" kindref="member">startServer</ref>, args = ())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/__main__.py" line="44" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/__main__.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace____main_____1a53ebc1b671bc860d557e274c6f7db716" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>whiletruethread</definition>
+        <argsstring></argsstring>
+        <name>whiletruethread</name>
+        <initializer>=  Thread(target = <ref refid="namespace____main_____1a5cd663b7efff8164ad13f39d2f577eee" kindref="member">whiletrue</ref>, args = ())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/__main__.py" line="46" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/__main__.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace____main_____1a2b75075b3fab588340f99971f29de8da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def __main__.startServer</definition>
+        <argsstring>()</argsstring>
+        <name>startServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/__main__.py" line="14" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/__main__.py" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace____main_____1a5cd663b7efff8164ad13f39d2f577eee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def __main__.whiletrue</definition>
+        <argsstring>()</argsstring>
+        <name>whiletrue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/__main__.py" line="18" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/__main__.py" bodystart="18" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/__main__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

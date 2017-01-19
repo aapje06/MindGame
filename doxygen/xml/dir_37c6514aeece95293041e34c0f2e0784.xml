@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="dir_37c6514aeece95293041e34c0f2e0784" kind="dir">
+    <compoundname>/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game</compoundname>
+    <innerfile refid="____init_____8py">__init__.py</innerfile>
+    <innerfile refid="game_8py">game.py</innerfile>
+    <innerfile refid="i2c_8py">i2c.py</innerfile>
+    <innerfile refid="_player_8py">Player.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="classweb_back_1_1_server_sent_event" kind="class" language="Python" prot="public">
+    <compoundname>webBack::ServerSentEvent</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classweb_back_1_1_server_sent_event_1a511ae0b1c13f95e5f08f1a0dd3da3d93" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="18" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classweb_back_1_1_server_sent_event_1a3b65133bb9997cd1ccf311af0927fc9e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>event</definition>
+        <argsstring></argsstring>
+        <name>event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="19" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classweb_back_1_1_server_sent_event_1acf2488b95c97e0378c9bf49de3b50f28" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="20" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classweb_back_1_1_server_sent_event_1af6ce9532eff4ab447fa4598622e1c4f2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>retry</definition>
+        <argsstring></argsstring>
+        <name>retry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="21" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classweb_back_1_1_server_sent_event_1a3f479e287873b8ab2327439f41a36969" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>desc_map</definition>
+        <argsstring></argsstring>
+        <name>desc_map</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="22" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classweb_back_1_1_server_sent_event_1a66ce128aaaf6596bbc7b0e6f3168de3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def __init__</definition>
+        <argsstring>(self, id, event, data, retry)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classweb_back_1_1_server_sent_event_1acf2488b95c97e0378c9bf49de3b50f28" kindref="member">id</ref></type>
+          <defname>id</defname>
+        </param>
+        <param>
+          <type><ref refid="classweb_back_1_1_server_sent_event_1a3b65133bb9997cd1ccf311af0927fc9e" kindref="member">event</ref></type>
+          <defname>event</defname>
+        </param>
+        <param>
+          <type><ref refid="classweb_back_1_1_server_sent_event_1a511ae0b1c13f95e5f08f1a0dd3da3d93" kindref="member">data</ref></type>
+          <defname>data</defname>
+        </param>
+        <param>
+          <type><ref refid="classweb_back_1_1_server_sent_event_1af6ce9532eff4ab447fa4598622e1c4f2" kindref="member">retry</ref></type>
+          <defname>retry</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="17" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="17" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classweb_back_1_1_server_sent_event_1a4b60b01b4d79989f97d040a26388d852" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def encode</definition>
+        <argsstring>(self)</argsstring>
+        <name>encode</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="29" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="29" bodyend="36"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7">
+        <label>object</label>
+      </node>
+      <node id="6">
+        <label>ServerSentEvent</label>
+        <link refid="classweb_back_1_1_server_sent_event"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>object</label>
+      </node>
+      <node id="8">
+        <label>ServerSentEvent</label>
+        <link refid="classweb_back_1_1_server_sent_event"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="15" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="15" bodyend="37"/>
+    <listofallmembers>
+      <member refid="classweb_back_1_1_server_sent_event_1a66ce128aaaf6596bbc7b0e6f3168de3f" prot="public" virt="non-virtual"><scope>webBack::ServerSentEvent</scope><name>__init__</name></member>
+      <member refid="classweb_back_1_1_server_sent_event_1a511ae0b1c13f95e5f08f1a0dd3da3d93" prot="public" virt="non-virtual"><scope>webBack::ServerSentEvent</scope><name>data</name></member>
+      <member refid="classweb_back_1_1_server_sent_event_1a3f479e287873b8ab2327439f41a36969" prot="public" virt="non-virtual"><scope>webBack::ServerSentEvent</scope><name>desc_map</name></member>
+      <member refid="classweb_back_1_1_server_sent_event_1a4b60b01b4d79989f97d040a26388d852" prot="public" virt="non-virtual"><scope>webBack::ServerSentEvent</scope><name>encode</name></member>
+      <member refid="classweb_back_1_1_server_sent_event_1a3b65133bb9997cd1ccf311af0927fc9e" prot="public" virt="non-virtual"><scope>webBack::ServerSentEvent</scope><name>event</name></member>
+      <member refid="classweb_back_1_1_server_sent_event_1acf2488b95c97e0378c9bf49de3b50f28" prot="public" virt="non-virtual"><scope>webBack::ServerSentEvent</scope><name>id</name></member>
+      <member refid="classweb_back_1_1_server_sent_event_1af6ce9532eff4ab447fa4598622e1c4f2" prot="public" virt="non-virtual"><scope>webBack::ServerSentEvent</scope><name>retry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

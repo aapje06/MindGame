@@ -1,0 +1,85 @@
+\hypertarget{i2c_8py}{}\section{/home/pieter-\/jan/\+Dropbox/\+School/2016-\/2017/\+Embedded prototyping/\+Python/game/i2c.py File Reference}
+\label{i2c_8py}\index{/home/pieter-\/jan/\+Dropbox/\+School/2016-\/2017/\+Embedded prototyping/\+Python/game/i2c.\+py@{/home/pieter-\/jan/\+Dropbox/\+School/2016-\/2017/\+Embedded prototyping/\+Python/game/i2c.\+py}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacegame_1_1i2c}{game.\+i2c}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegame_1_1i2c_a1d5b4aed68be231c5ca8d1611701a17c}{setinputs} ()
+\item 
+def \hyperlink{namespacegame_1_1i2c_a7e8169f802337f7cea2d2f1bd574d10b}{reset\+Average} ()
+\item 
+def \hyperlink{namespacegame_1_1i2c_acd6c2462d1aa66a93f0c6a0082e5e905}{get\+Average} (sensor)
+\item 
+def \hyperlink{namespacegame_1_1i2c_aa4e92c48e15886b974e184f3f010fc1f}{read\+Sensor} (person)
+\item 
+def \hyperlink{namespacegame_1_1i2c_ab81bf937d9c153a616b84229be27cfdf}{readballs} (person)
+\item 
+def \hyperlink{namespacegame_1_1i2c_ae885c09ef1646e179bf8b880fbb284a6}{set\+Led\+Strip\+Time} (person, percentage)
+\item 
+def \hyperlink{namespacegame_1_1i2c_a6c70916a0df4071830627cc65b734df4}{set\+Active\+Time\+Color} (person, R, G, B)
+\item 
+def \hyperlink{namespacegame_1_1i2c_a53e720c22085d10f15012190ea3f8ab9}{set\+Passive\+Time\+Color} (person, R, G, B)
+\item 
+def \hyperlink{namespacegame_1_1i2c_a16a8d8b75765d12d7dfd792a454d7f18}{get\+Active\+Time\+Color} (person)
+\item 
+def \hyperlink{namespacegame_1_1i2c_aff5b5c1346a69dfa85f464da0d1df030}{get\+Passive\+Time\+Color} (person)
+\item 
+def \hyperlink{namespacegame_1_1i2c_a6cc044fcf10970e62f6e7d8a8eea7dbd}{set\+Balls\+Leds} (person, hole, R, B)
+\item 
+def \hyperlink{namespacegame_1_1i2c_a2988a923a2bb6a9d2f4c8e7409e0aded}{set\+Headset\+Color} (person, R, G, B)
+\item 
+def \hyperlink{namespacegame_1_1i2c_aa72744d8ce34e48fe75bd216ac66d0e4}{initialize} ()
+\item 
+def \hyperlink{namespacegame_1_1i2c_a3a43a96db3ce557e507f3c08617b19c5}{startgame} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespacegame_1_1i2c_a7e0dfd391eb5195c444ecafa938194e6}{sensor1} = 128
+\item 
+int \hyperlink{namespacegame_1_1i2c_ad8dff55b9286c066e6bc71950b710a28}{sensor2} = 128
+\item 
+int \hyperlink{namespacegame_1_1i2c_ada8d57d81c6d31174d5072cd306a5319}{holes1} = 0
+\item 
+int \hyperlink{namespacegame_1_1i2c_a9b974e58b92b6ace923493eb04219145}{holes2} = 0
+\item 
+\hyperlink{namespacegame_1_1i2c_a411bd59fecc82fdfda0e5c9d7da7447f}{bus} = smbus.\+S\+M\+Bus(1)
+\item 
+int \hyperlink{namespacegame_1_1i2c_a45c6bc6d1135dc398bf8deae861a2ebc}{address} = 0x04
+\item 
+int \hyperlink{namespacegame_1_1i2c_a7ddd85a4f113648910e222fb76d93506}{teller1} = 2
+\item 
+int \hyperlink{namespacegame_1_1i2c_a255c8064ec67df52c6aadc54ea744b11}{teller2} = 2
+\item 
+\hyperlink{namespacegame_1_1i2c_a41e4c864658657ecc0ecc43d65db5a64}{p1active} = Color(255,0,0)
+\item 
+\hyperlink{namespacegame_1_1i2c_a74f6b1b14e9155ac66e89d1c72c3ace9}{p1passive} = Color(0,0,0)
+\item 
+\hyperlink{namespacegame_1_1i2c_a9ba589e5b81a9e64152ebf0c727a3238}{p2active} = Color(255,0,0)
+\item 
+\hyperlink{namespacegame_1_1i2c_a16792386ad01936c15a8677177571de3}{p2passive} = Color(0,0,0)
+\item 
+int \hyperlink{namespacegame_1_1i2c_a0150eb7d9551697284fa8def1d6a5e78}{L\+E\+D\+\_\+\+C\+O\+U\+NT} = 82
+\item 
+int \hyperlink{namespacegame_1_1i2c_a7d6ed2029581b42043aa921270f03362}{L\+E\+D\+\_\+\+P\+IN} = 18
+\item 
+int \hyperlink{namespacegame_1_1i2c_a4985f02a4206248cfb12e46ac7e5fa1a}{L\+E\+D\+\_\+\+F\+R\+E\+Q\+\_\+\+HZ} = 800000
+\item 
+int \hyperlink{namespacegame_1_1i2c_a3577c4e268c23fe92bb64fdb4c878027}{L\+E\+D\+\_\+\+D\+MA} = 5
+\item 
+int \hyperlink{namespacegame_1_1i2c_ac0bf31bc536242ae4682e1d4e782f671}{L\+E\+D\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+SS} = 255
+\item 
+bool \hyperlink{namespacegame_1_1i2c_a02f2f11be4e8df2102f522e3e8983d7b}{L\+E\+D\+\_\+\+I\+N\+V\+E\+RT} = False
+\item 
+\hyperlink{namespacegame_1_1i2c_a42641ead00dd4d143296d15b3987dea9}{strip} = Adafruit\+\_\+\+Neo\+Pixel(L\+E\+D\+\_\+\+C\+O\+U\+NT, L\+E\+D\+\_\+\+P\+IN, L\+E\+D\+\_\+\+F\+R\+E\+Q\+\_\+\+HZ, L\+E\+D\+\_\+\+D\+MA, L\+E\+D\+\_\+\+I\+N\+V\+E\+RT, L\+E\+D\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+SS)
+\item 
+int \hyperlink{namespacegame_1_1i2c_a8ae8dfaf0d98d3e56f9f87fa8d863668}{averagecounter} = 0
+\item 
+int \hyperlink{namespacegame_1_1i2c_a90ec455573b3639b7b0d7df1fc0d86db}{sensor1\+Average} = 0
+\item 
+int \hyperlink{namespacegame_1_1i2c_a7d4f6ad3f32515d2299fa2bccce619cf}{sensor2\+Average} = 0
+\end{DoxyCompactItemize}

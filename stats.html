@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>MindGame - Statistics</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/font-awesome.min.css">
+	<script src="/js/jquery-3.1.1.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+</head>
+<style type="text/css">
+	.bg-1
+	{
+		background-color: #2a9236 !important;
+		color: #fff !important;
+	}
+	.bg-2
+	{
+		background-color: #fff
+	}
+	.textbox-bg
+	{
+		background-color: #f2f2f2;
+	}
+	.jumbotron{
+        padding: 10px 10px;
+        border-radius:70px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+        border-color: #000;
+        border-style: solid;
+        border-width: 1px;
+    }
+	.panel-default{
+        border-radius: 15px;
+        border-color: #999;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 5px;
+        background-color: transparent;
+    }
+	.fa{
+		color: #2a9236;
+	}
+	.table th, .table td{
+        border-color: #999 !important;
+        text-align: center !important;
+    }
+</style>
+<body class="bg-2">
+
+	<div class="jumbotron text-center bg-1">
+        <div class="row text-center">
+            <!--logo div-->
+          <div class="col-sm-2" style="vertical-align: center !important;">
+                <img src="pics/logow.png" style="height: 130px;">
+          </div>
+          <div class="col-sm-8 text-center">
+              <h1>MindGame</h1>
+              <p>Practice your mindset</p>
+          </div>
+        </div>
+    </div>
+
+    
+
+	<div class="container">
+	  	<div class="row text-center">
+	  		<h2>Statistics</h2>
+		  	<!-- HOLE AVERAGE -->
+		    <div class="col-sm-12">
+		    	<h4>Amount of goals per hole</h4>
+		     	<div class="panel panel-default">
+		     		<table class="table"><thead>
+		     		<tr>
+		     			<th></th>
+		     			<th>1</th>
+		     			<th>2</th>
+		     			<th>3</th>
+		     			<th>4</th>
+		     			<th>5</th>
+		     			<th>6</th>
+		     			<th>7</th>
+		     			<th>8</th>
+	     			</tr>
+		     		<!--<tr>
+		     			<th><i class="fa fa-circle-o"></i></th>
+		     			<th><i class="fa fa-circle-o"></i></th>
+		     			<th><i class="fa fa-circle-o"></i></th>
+		     			<th><i class="fa fa-circle-o"></i></th>
+		     			<th><i class="fa fa-circle-o"></i></th>
+		     			<th><i class="fa fa-circle-o"></i></th>
+		     			<th><i class="fa fa-circle-o"></i></th>
+		     			<th><i class="fa fa-circle-o"></i></th>
+	     			</tr>--></thead><tbody id="holeStatTable">
+	     				<td>20%</td>
+	     			</tbody></table>
+		     	</div>
+		    </div>
+		</div>
+
+		<div class="row text-center">
+		    <!--POINTS AVERAGE -->
+		    <div class="col-sm-12">
+		    	<h4>Average points per game mode</h4>
+		      	<div class="panel panel-default">
+		     		<table class="table"><thead>
+		     		<tr>
+		     			<th></th>
+		     			<th>Easy</th>
+		     			<th>Normal</th>
+		     			<th>Hard</th>
+	     			</tr>
+		     		</thead><tbody id="pointsStatTable">
+	     				
+	     			</tbody></table>
+		     	</div>
+		    </div>
+	    </div>
+
+	    <div class="row text-center">
+		    <!-- HARTS AVERAGE -->
+		    <div class="col-sm-12">
+		    	<h4>Average heart rate per game mode</h4>
+		      	<div class="panel panel-default">
+		     		<table class="table"><thead>
+		     		<tr>
+		     			<th>Red</th>
+		     			<th>Green</th>
+		     			<th>Blue</th>
+	     			</tr>
+		     		</thead><tbody id="hartsStatTable">
+	     				
+	     			</tbody></table>
+		     	</div>
+		    </div>
+	    </div>
+
+	    <form method="get" action="/">
+          <button type="button btn-block" class="btn btn-block bg-1" style="width: 200px; margin-left: -100px; left: 50%; position:relative;">Return to main page</button>
+      	</form>
+
+	<!--ending of container -->
+	</div>
+
+</body>
+
+<script type="text/javascript">
+	if(typeof(EventSource) !== "undefined") {
+	        var source = new EventSource("/statInfo");
+
+	        source.onmessage = function(event) {
+	            console.log(event.data);
+	        };
+
+	        source.addEventListener('holeStat', function(e){
+	            console.log("holeStat data: " + e.data);
+	            var holeStats = JSON.parse(e.data);
+	            var count = [0,0,0,0,0,0,0,0]
+	            if(holeStats.Holes.length >0){
+	            	count[0] = holeStats.Holes[0].hole1;
+	            	count[1] = holeStats.Holes[0].hole2;
+	            	count[2] = holeStats.Holes[0].hole3;
+	            	count[3] = holeStats.Holes[0].hole4;
+	            	count[4] = holeStats.Holes[0].hole5;
+	            	count[5] = holeStats.Holes[0].hole6;
+	            	count[6] = holeStats.Holes[0].hole7;
+	            	count[7] = holeStats.Holes[0].hole8;
+	                var result = "<tr><td>Absolute</td>";
+	                var sum = 0;
+	                for (var i = 0; i < 8; i++) {
+	                	result += "<td>" + count[i] + "</td>";
+	                	sum+= parseFloat(count[i]);
+	                }
+	                //console.log(sum);
+	                result+="</tr><tr><td>Relative</td>";
+	                for (var i = 0; i < 8; i++) {
+	                	result += "<td>" + Math.round(count[i] *10000 / sum) / 100 + "%</td>";
+	                }
+	                result+="</tr>";
+	                document.getElementById("holeStatTable").innerHTML = result;
+	            }
+	            else{
+	                document.getElementById("holeStatTable").innerHTML = "Something went wrong...";
+	            }
+	        },false);
+
+	        source.addEventListener('pointsStat', function(e){
+	            console.log("pointsStat data: " + e.data);
+	            var pointsStat = JSON.parse(e.data);
+	            if(pointsStat.averages.length >0){
+	                var result = "<tr><td>Subtile</td>";
+                	result += "<td>" + pointsStat.averages[0].easy_subtile + "</td>";
+                	result += "<td>" + pointsStat.averages[0].normal_subtile + "</td>";
+                	result += "<td>" + pointsStat.averages[0].hard_subtile + "</td>";
+	                result +="</tr>";
+	                result += "<tr><td>Extreme</td>";
+                	result += "<td>" + pointsStat.averages[0].easy_extreme + "</td>";
+                	result += "<td>" + pointsStat.averages[0].normal_extreme + "</td>";
+                	result += "<td>" + pointsStat.averages[0].hard_extreme + "</td>";
+	                result +="</tr>";
+	                document.getElementById("pointsStatTable").innerHTML = result;
+	            }
+	            else{
+	                document.getElementById("pointsStatTable").innerHTML = "Something went wrong...";
+	            }
+	        },false);
+
+	        source.addEventListener('hartsStat', function(e){
+	            console.log("hartsStat data: " + e.data);
+	            var hartsStat = JSON.parse(e.data);
+	            if(hartsStat.Hart.length >0){
+	                var result = "<tr>";
+                	result += "<td>" + hartsStat.Hart[0].Red + "</td>";
+                	result += "<td>" + hartsStat.Hart[0].Green + "</td>";
+                	result += "<td>" + hartsStat.Hart[0].Blue + "</td>";
+	                result+="</tr>";
+	                document.getElementById("hartsStatTable").innerHTML = result;
+	            }
+	            else{
+	                document.getElementById("hartsStatTable").innerHTML = "Something went wrong...";
+	            }
+	        },false);
+	}else{
+		document.getElementById("holeStatTable").innerHTML = "<h5>Sorry, your browser does not support server-sent events...</h5>";
+	}
+</script>
+</html>

@@ -1,0 +1,203 @@
+.TH "game.i2c" 3 "Thu Jan 19 2017" "MindGame" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+game.i2c \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBsetinputs\fP ()"
+.br
+.ti -1c
+.RI "def \fBresetAverage\fP ()"
+.br
+.ti -1c
+.RI "def \fBgetAverage\fP (sensor)"
+.br
+.ti -1c
+.RI "def \fBreadSensor\fP (person)"
+.br
+.ti -1c
+.RI "def \fBreadballs\fP (person)"
+.br
+.ti -1c
+.RI "def \fBsetLedStripTime\fP (person, percentage)"
+.br
+.ti -1c
+.RI "def \fBsetActiveTimeColor\fP (person, R, G, B)"
+.br
+.ti -1c
+.RI "def \fBsetPassiveTimeColor\fP (person, R, G, B)"
+.br
+.ti -1c
+.RI "def \fBgetActiveTimeColor\fP (person)"
+.br
+.ti -1c
+.RI "def \fBgetPassiveTimeColor\fP (person)"
+.br
+.ti -1c
+.RI "def \fBsetBallsLeds\fP (person, hole, R, B)"
+.br
+.ti -1c
+.RI "def \fBsetHeadsetColor\fP (person, R, G, B)"
+.br
+.ti -1c
+.RI "def \fBinitialize\fP ()"
+.br
+.ti -1c
+.RI "def \fBstartgame\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fBsensor1\fP = 128"
+.br
+.ti -1c
+.RI "int \fBsensor2\fP = 128"
+.br
+.ti -1c
+.RI "int \fBholes1\fP = 0"
+.br
+.ti -1c
+.RI "int \fBholes2\fP = 0"
+.br
+.ti -1c
+.RI "\fBbus\fP = smbus\&.SMBus(1)"
+.br
+.ti -1c
+.RI "int \fBaddress\fP = 0x04"
+.br
+.ti -1c
+.RI "int \fBteller1\fP = 2"
+.br
+.ti -1c
+.RI "int \fBteller2\fP = 2"
+.br
+.ti -1c
+.RI "\fBp1active\fP = Color(255,0,0)"
+.br
+.ti -1c
+.RI "\fBp1passive\fP = Color(0,0,0)"
+.br
+.ti -1c
+.RI "\fBp2active\fP = Color(255,0,0)"
+.br
+.ti -1c
+.RI "\fBp2passive\fP = Color(0,0,0)"
+.br
+.ti -1c
+.RI "int \fBLED_COUNT\fP = 82"
+.br
+.ti -1c
+.RI "int \fBLED_PIN\fP = 18"
+.br
+.ti -1c
+.RI "int \fBLED_FREQ_HZ\fP = 800000"
+.br
+.ti -1c
+.RI "int \fBLED_DMA\fP = 5"
+.br
+.ti -1c
+.RI "int \fBLED_BRIGHTNESS\fP = 255"
+.br
+.ti -1c
+.RI "bool \fBLED_INVERT\fP = False"
+.br
+.ti -1c
+.RI "\fBstrip\fP = Adafruit_NeoPixel(\fBLED_COUNT\fP, \fBLED_PIN\fP, \fBLED_FREQ_HZ\fP, \fBLED_DMA\fP, \fBLED_INVERT\fP, \fBLED_BRIGHTNESS\fP)"
+.br
+.ti -1c
+.RI "int \fBaveragecounter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBsensor1Average\fP = 0"
+.br
+.ti -1c
+.RI "int \fBsensor2Average\fP = 0"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "def game\&.i2c\&.getActiveTimeColor ( person)"
+
+.SS "def game\&.i2c\&.getAverage ( sensor)"
+
+.SS "def game\&.i2c\&.getPassiveTimeColor ( person)"
+
+.SS "def game\&.i2c\&.initialize ()"
+
+.SS "def game\&.i2c\&.readballs ( person)"
+
+.SS "def game\&.i2c\&.readSensor ( person)"
+
+.SS "def game\&.i2c\&.resetAverage ()"
+
+.SS "def game\&.i2c\&.setActiveTimeColor ( person,  R,  G,  B)"
+
+.SS "def game\&.i2c\&.setBallsLeds ( person,  hole,  R,  B)"
+
+.SS "def game\&.i2c\&.setHeadsetColor ( person,  R,  G,  B)"
+
+.SS "def game\&.i2c\&.setinputs ()"
+
+.SS "def game\&.i2c\&.setLedStripTime ( person,  percentage)"
+
+.SS "def game\&.i2c\&.setPassiveTimeColor ( person,  R,  G,  B)"
+
+.SS "def game\&.i2c\&.startgame ()"
+
+.SH "Variable Documentation"
+.PP 
+.SS "int address = 0x04"
+
+.SS "int averagecounter = 0"
+
+.SS "bus = smbus\&.SMBus(1)"
+
+.SS "int holes1 = 0"
+
+.SS "int holes2 = 0"
+
+.SS "int LED_BRIGHTNESS = 255"
+
+.SS "int LED_COUNT = 82"
+
+.SS "int LED_DMA = 5"
+
+.SS "int LED_FREQ_HZ = 800000"
+
+.SS "bool LED_INVERT = False"
+
+.SS "int LED_PIN = 18"
+
+.SS "p1active = Color(255,0,0)"
+
+.SS "p1passive = Color(0,0,0)"
+
+.SS "p2active = Color(255,0,0)"
+
+.SS "p2passive = Color(0,0,0)"
+
+.SS "int sensor1 = 128"
+
+.SS "int sensor1Average = 0"
+
+.SS "int sensor2 = 128"
+
+.SS "int sensor2Average = 0"
+
+.SS "strip = Adafruit_NeoPixel(\fBLED_COUNT\fP, \fBLED_PIN\fP, \fBLED_FREQ_HZ\fP, \fBLED_DMA\fP, \fBLED_INVERT\fP, \fBLED_BRIGHTNESS\fP)"
+
+.SS "int teller1 = 2"
+
+.SS "int teller2 = 2"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MindGame from the source code\&.

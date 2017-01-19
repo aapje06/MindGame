@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="game_8py" kind="file" language="Python">
+    <compoundname>game.py</compoundname>
+    <innerclass refid="classgame_1_1game_1_1_game" prot="public">game::game::Game</innerclass>
+    <innernamespace refid="namespacegame_1_1game">game::game</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacegame_1_1game" refkind="compound"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>Player<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>player</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>threading<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Thread</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>time</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>i2c</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classgame_1_1game_1_1_game" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1game_1_1_game" kindref="compound">Game</ref>:</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1game_1_1_game_1a84a2c5df02ca5f02dc12bfec660ad82a" kindref="member">__init__</ref>(self,player1,player2,<sp/>GameMode,<sp/>lightMode):</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgame_1_1game_1_1_game_1a5386ee402dfe77ffb134697b75f81e26" kindref="member">player1</ref><sp/>=<sp/>player1</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgame_1_1game_1_1_game_1a49f9ad8e7cfbcb84c2669fb43958df42" kindref="member">player2</ref><sp/>=<sp/>player2</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgame_1_1game_1_1_game_1aaf5ef5a17b53e9997c837b07015589de" kindref="member">GameMode</ref><sp/>=<sp/>GameMode</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgame_1_1game_1_1_game_1a68bcdfccc99b6ac8189450754da36f78" kindref="member">lightMode</ref><sp/>=<sp/>lightMode</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgame_1_1game_1_1_game_1acb971b832c5f8a89e9995caaee26a1df" kindref="member">countdown</ref><sp/>=<sp/>3</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgame_1_1game_1_1_game_1aa850ae5126b39a75859039aa84c3a577" kindref="member">p1</ref><sp/>=<sp/><ref refid="classgame_1_1_player_1_1player" kindref="compound">player</ref>(self.<ref refid="classgame_1_1game_1_1_game_1aaf5ef5a17b53e9997c837b07015589de" kindref="member">GameMode</ref>,<sp/>self.<ref refid="classgame_1_1game_1_1_game_1a68bcdfccc99b6ac8189450754da36f78" kindref="member">lightMode</ref>,<sp/>self.<ref refid="classgame_1_1game_1_1_game_1a5386ee402dfe77ffb134697b75f81e26" kindref="member">player1</ref>,<sp/>1)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgame_1_1game_1_1_game_1a9099c7c12dde5f81f4d3ce261da3637c" kindref="member">p2</ref><sp/>=<sp/><ref refid="classgame_1_1_player_1_1player" kindref="compound">player</ref>(self.<ref refid="classgame_1_1game_1_1_game_1aaf5ef5a17b53e9997c837b07015589de" kindref="member">GameMode</ref>,<sp/>self.<ref refid="classgame_1_1game_1_1_game_1a68bcdfccc99b6ac8189450754da36f78" kindref="member">lightMode</ref>,<sp/>self.<ref refid="classgame_1_1game_1_1_game_1a49f9ad8e7cfbcb84c2669fb43958df42" kindref="member">player2</ref>,<sp/>2)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;game<sp/>made&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1game_1_1_game_1aa78d70ae2aafa130eaa143ce55887aff" kindref="member">startGame</ref>(self):</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">start():</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;game<sp/>starting&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgame_1_1game_1_1_game_1aa850ae5126b39a75859039aa84c3a577" kindref="member">p1</ref>.time<sp/>=<sp/>self.<ref refid="classgame_1_1game_1_1_game_1aa850ae5126b39a75859039aa84c3a577" kindref="member">p1</ref>.maxTime</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgame_1_1game_1_1_game_1a9099c7c12dde5f81f4d3ce261da3637c" kindref="member">p2</ref>.time<sp/>=<sp/>self.<ref refid="classgame_1_1game_1_1_game_1a9099c7c12dde5f81f4d3ce261da3637c" kindref="member">p2</ref>.maxTime</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i2c.setPassiveTimeColor(1,0,0,0)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i2c.setPassiveTimeColor(2,0,0,0)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i2c.setLedStripTime(1,0)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i2c.setLedStripTime(2,0)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;ledstrip<sp/>set&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i2c.initialize()</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(self.<ref refid="classgame_1_1game_1_1_game_1acb971b832c5f8a89e9995caaee26a1df" kindref="member">countdown</ref>&gt;0):</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;countdown:<sp/>%d&quot;</highlight><highlight class="normal"><sp/>%(self.<ref refid="classgame_1_1game_1_1_game_1acb971b832c5f8a89e9995caaee26a1df" kindref="member">countdown</ref>))</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>time.sleep(1)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgame_1_1game_1_1_game_1acb971b832c5f8a89e9995caaee26a1df" kindref="member">countdown</ref><sp/>-=1</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i2c.startgame()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgame_1_1game_1_1_game_1aa850ae5126b39a75859039aa84c3a577" kindref="member">p1</ref>.startTime()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classgame_1_1game_1_1_game_1a9099c7c12dde5f81f4d3ce261da3637c" kindref="member">p2</ref>.startTime()</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>startThread<sp/>=<sp/>Thread(target<sp/>=<sp/>start,<sp/>args<sp/>=<sp/>())</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>startThread.start()</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1game_1_1_game_1aed504f4752749c9ca28461f4628ae5c3" kindref="member">getPlayer1Name</ref>(self):</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classgame_1_1game_1_1_game_1aa850ae5126b39a75859039aa84c3a577" kindref="member">p1</ref>.getName()</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classgame_1_1game_1_1_game_1acd678d3a250de66662badf84935e5ffb" kindref="member">getPlayer2Name</ref>(self):</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classgame_1_1game_1_1_game_1a9099c7c12dde5f81f4d3ce261da3637c" kindref="member">p2</ref>.getName()</highlight></codeline>
+    </programlisting>
+    <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/game.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,134 @@
+.TH "/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" 3 "Thu Jan 19 2017" "MindGame" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBgame\&.i2c\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBsetinputs\fP ()"
+.br
+.ti -1c
+.RI "def \fBresetAverage\fP ()"
+.br
+.ti -1c
+.RI "def \fBgetAverage\fP (sensor)"
+.br
+.ti -1c
+.RI "def \fBreadSensor\fP (person)"
+.br
+.ti -1c
+.RI "def \fBreadballs\fP (person)"
+.br
+.ti -1c
+.RI "def \fBsetLedStripTime\fP (person, percentage)"
+.br
+.ti -1c
+.RI "def \fBsetActiveTimeColor\fP (person, R, G, B)"
+.br
+.ti -1c
+.RI "def \fBsetPassiveTimeColor\fP (person, R, G, B)"
+.br
+.ti -1c
+.RI "def \fBgetActiveTimeColor\fP (person)"
+.br
+.ti -1c
+.RI "def \fBgetPassiveTimeColor\fP (person)"
+.br
+.ti -1c
+.RI "def \fBsetBallsLeds\fP (person, hole, R, B)"
+.br
+.ti -1c
+.RI "def \fBsetHeadsetColor\fP (person, R, G, B)"
+.br
+.ti -1c
+.RI "def \fBinitialize\fP ()"
+.br
+.ti -1c
+.RI "def \fBstartgame\fP ()"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "int \fBsensor1\fP = 128"
+.br
+.ti -1c
+.RI "int \fBsensor2\fP = 128"
+.br
+.ti -1c
+.RI "int \fBholes1\fP = 0"
+.br
+.ti -1c
+.RI "int \fBholes2\fP = 0"
+.br
+.ti -1c
+.RI "\fBbus\fP = smbus\&.SMBus(1)"
+.br
+.ti -1c
+.RI "int \fBaddress\fP = 0x04"
+.br
+.ti -1c
+.RI "int \fBteller1\fP = 2"
+.br
+.ti -1c
+.RI "int \fBteller2\fP = 2"
+.br
+.ti -1c
+.RI "\fBp1active\fP = Color(255,0,0)"
+.br
+.ti -1c
+.RI "\fBp1passive\fP = Color(0,0,0)"
+.br
+.ti -1c
+.RI "\fBp2active\fP = Color(255,0,0)"
+.br
+.ti -1c
+.RI "\fBp2passive\fP = Color(0,0,0)"
+.br
+.ti -1c
+.RI "int \fBLED_COUNT\fP = 82"
+.br
+.ti -1c
+.RI "int \fBLED_PIN\fP = 18"
+.br
+.ti -1c
+.RI "int \fBLED_FREQ_HZ\fP = 800000"
+.br
+.ti -1c
+.RI "int \fBLED_DMA\fP = 5"
+.br
+.ti -1c
+.RI "int \fBLED_BRIGHTNESS\fP = 255"
+.br
+.ti -1c
+.RI "bool \fBLED_INVERT\fP = False"
+.br
+.ti -1c
+.RI "\fBstrip\fP = Adafruit_NeoPixel(LED_COUNT, LED_PIN, LED_FREQ_HZ, LED_DMA, LED_INVERT, LED_BRIGHTNESS)"
+.br
+.ti -1c
+.RI "int \fBaveragecounter\fP = 0"
+.br
+.ti -1c
+.RI "int \fBsensor1Average\fP = 0"
+.br
+.ti -1c
+.RI "int \fBsensor2Average\fP = 0"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for MindGame from the source code\&.

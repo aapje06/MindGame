@@ -1,0 +1,597 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="namespacegame_1_1i2c" kind="namespace" language="Python">
+    <compoundname>game::i2c</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1a7e0dfd391eb5195c444ecafa938194e6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sensor1</definition>
+        <argsstring></argsstring>
+        <name>sensor1</name>
+        <initializer>=  128</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="9" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1ad8dff55b9286c066e6bc71950b710a28" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sensor2</definition>
+        <argsstring></argsstring>
+        <name>sensor2</name>
+        <initializer>=  128</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="10" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1ada8d57d81c6d31174d5072cd306a5319" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int holes1</definition>
+        <argsstring></argsstring>
+        <name>holes1</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="11" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1a9b974e58b92b6ace923493eb04219145" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int holes2</definition>
+        <argsstring></argsstring>
+        <name>holes2</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="12" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1a411bd59fecc82fdfda0e5c9d7da7447f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>bus</definition>
+        <argsstring></argsstring>
+        <name>bus</name>
+        <initializer>=  smbus.SMBus(1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="13" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1a45c6bc6d1135dc398bf8deae861a2ebc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <initializer>=  0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="14" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1a7ddd85a4f113648910e222fb76d93506" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int teller1</definition>
+        <argsstring></argsstring>
+        <name>teller1</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="17" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1a255c8064ec67df52c6aadc54ea744b11" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int teller2</definition>
+        <argsstring></argsstring>
+        <name>teller2</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="19" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1a41e4c864658657ecc0ecc43d65db5a64" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>p1active</definition>
+        <argsstring></argsstring>
+        <name>p1active</name>
+        <initializer>=  Color(255,0,0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="26" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1a74f6b1b14e9155ac66e89d1c72c3ace9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>p1passive</definition>
+        <argsstring></argsstring>
+        <name>p1passive</name>
+        <initializer>=  Color(0,0,0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="27" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1a9ba589e5b81a9e64152ebf0c727a3238" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>p2active</definition>
+        <argsstring></argsstring>
+        <name>p2active</name>
+        <initializer>=  Color(255,0,0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="28" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1a16792386ad01936c15a8677177571de3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>p2passive</definition>
+        <argsstring></argsstring>
+        <name>p2passive</name>
+        <initializer>=  Color(0,0,0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="29" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1a0150eb7d9551697284fa8def1d6a5e78" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LED_COUNT</definition>
+        <argsstring></argsstring>
+        <name>LED_COUNT</name>
+        <initializer>=  82</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="32" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1a7d6ed2029581b42043aa921270f03362" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LED_PIN</definition>
+        <argsstring></argsstring>
+        <name>LED_PIN</name>
+        <initializer>=  18</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="33" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1a4985f02a4206248cfb12e46ac7e5fa1a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LED_FREQ_HZ</definition>
+        <argsstring></argsstring>
+        <name>LED_FREQ_HZ</name>
+        <initializer>=  800000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="34" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1a3577c4e268c23fe92bb64fdb4c878027" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LED_DMA</definition>
+        <argsstring></argsstring>
+        <name>LED_DMA</name>
+        <initializer>=  5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="35" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1ac0bf31bc536242ae4682e1d4e782f671" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LED_BRIGHTNESS</definition>
+        <argsstring></argsstring>
+        <name>LED_BRIGHTNESS</name>
+        <initializer>=  255</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="36" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1a02f2f11be4e8df2102f522e3e8983d7b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool LED_INVERT</definition>
+        <argsstring></argsstring>
+        <name>LED_INVERT</name>
+        <initializer>=  False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="37" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1a42641ead00dd4d143296d15b3987dea9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>strip</definition>
+        <argsstring></argsstring>
+        <name>strip</name>
+        <initializer>=  Adafruit_NeoPixel(<ref refid="namespacegame_1_1i2c_1a0150eb7d9551697284fa8def1d6a5e78" kindref="member">LED_COUNT</ref>, <ref refid="namespacegame_1_1i2c_1a7d6ed2029581b42043aa921270f03362" kindref="member">LED_PIN</ref>, <ref refid="namespacegame_1_1i2c_1a4985f02a4206248cfb12e46ac7e5fa1a" kindref="member">LED_FREQ_HZ</ref>, <ref refid="namespacegame_1_1i2c_1a3577c4e268c23fe92bb64fdb4c878027" kindref="member">LED_DMA</ref>, <ref refid="namespacegame_1_1i2c_1a02f2f11be4e8df2102f522e3e8983d7b" kindref="member">LED_INVERT</ref>, <ref refid="namespacegame_1_1i2c_1ac0bf31bc536242ae4682e1d4e782f671" kindref="member">LED_BRIGHTNESS</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="40" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1a8ae8dfaf0d98d3e56f9f87fa8d863668" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int averagecounter</definition>
+        <argsstring></argsstring>
+        <name>averagecounter</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="48" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1a90ec455573b3639b7b0d7df1fc0d86db" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sensor1Average</definition>
+        <argsstring></argsstring>
+        <name>sensor1Average</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="49" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegame_1_1i2c_1a7d4f6ad3f32515d2299fa2bccce619cf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sensor2Average</definition>
+        <argsstring></argsstring>
+        <name>sensor2Average</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="50" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegame_1_1i2c_1a1d5b4aed68be231c5ca8d1611701a17c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def game.i2c.setinputs</definition>
+        <argsstring>()</argsstring>
+        <name>setinputs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="52" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="52" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegame_1_1i2c_1a7e8169f802337f7cea2d2f1bd574d10b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def game.i2c.resetAverage</definition>
+        <argsstring>()</argsstring>
+        <name>resetAverage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="75" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegame_1_1i2c_1acd6c2462d1aa66a93f0c6a0082e5e905" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def game.i2c.getAverage</definition>
+        <argsstring>(sensor)</argsstring>
+        <name>getAverage</name>
+        <param>
+          <type>sensor</type>
+          <defname>sensor</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="79" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="79" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegame_1_1i2c_1aa4e92c48e15886b974e184f3f010fc1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def game.i2c.readSensor</definition>
+        <argsstring>(person)</argsstring>
+        <name>readSensor</name>
+        <param>
+          <type>person</type>
+          <defname>person</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="87" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="87" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegame_1_1i2c_1ab81bf937d9c153a616b84229be27cfdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def game.i2c.readballs</definition>
+        <argsstring>(person)</argsstring>
+        <name>readballs</name>
+        <param>
+          <type>person</type>
+          <defname>person</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="96" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="96" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegame_1_1i2c_1ae885c09ef1646e179bf8b880fbb284a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def game.i2c.setLedStripTime</definition>
+        <argsstring>(person, percentage)</argsstring>
+        <name>setLedStripTime</name>
+        <param>
+          <type>person</type>
+          <defname>person</defname>
+        </param>
+        <param>
+          <type>percentage</type>
+          <defname>percentage</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="118" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="118" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegame_1_1i2c_1a6c70916a0df4071830627cc65b734df4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def game.i2c.setActiveTimeColor</definition>
+        <argsstring>(person, R, G, B)</argsstring>
+        <name>setActiveTimeColor</name>
+        <param>
+          <type>person</type>
+          <defname>person</defname>
+        </param>
+        <param>
+          <type>R</type>
+          <defname>R</defname>
+        </param>
+        <param>
+          <type>G</type>
+          <defname>G</defname>
+        </param>
+        <param>
+          <type>B</type>
+          <defname>B</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="135" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="135" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegame_1_1i2c_1a53e720c22085d10f15012190ea3f8ab9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def game.i2c.setPassiveTimeColor</definition>
+        <argsstring>(person, R, G, B)</argsstring>
+        <name>setPassiveTimeColor</name>
+        <param>
+          <type>person</type>
+          <defname>person</defname>
+        </param>
+        <param>
+          <type>R</type>
+          <defname>R</defname>
+        </param>
+        <param>
+          <type>G</type>
+          <defname>G</defname>
+        </param>
+        <param>
+          <type>B</type>
+          <defname>B</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="143" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="143" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegame_1_1i2c_1a16a8d8b75765d12d7dfd792a454d7f18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def game.i2c.getActiveTimeColor</definition>
+        <argsstring>(person)</argsstring>
+        <name>getActiveTimeColor</name>
+        <param>
+          <type>person</type>
+          <defname>person</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="151" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="151" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegame_1_1i2c_1aff5b5c1346a69dfa85f464da0d1df030" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def game.i2c.getPassiveTimeColor</definition>
+        <argsstring>(person)</argsstring>
+        <name>getPassiveTimeColor</name>
+        <param>
+          <type>person</type>
+          <defname>person</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="159" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="159" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegame_1_1i2c_1a6cc044fcf10970e62f6e7d8a8eea7dbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def game.i2c.setBallsLeds</definition>
+        <argsstring>(person, hole, R, B)</argsstring>
+        <name>setBallsLeds</name>
+        <param>
+          <type>person</type>
+          <defname>person</defname>
+        </param>
+        <param>
+          <type>hole</type>
+          <defname>hole</defname>
+        </param>
+        <param>
+          <type>R</type>
+          <defname>R</defname>
+        </param>
+        <param>
+          <type>B</type>
+          <defname>B</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="167" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="167" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegame_1_1i2c_1a2988a923a2bb6a9d2f4c8e7409e0aded" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def game.i2c.setHeadsetColor</definition>
+        <argsstring>(person, R, G, B)</argsstring>
+        <name>setHeadsetColor</name>
+        <param>
+          <type>person</type>
+          <defname>person</defname>
+        </param>
+        <param>
+          <type>R</type>
+          <defname>R</defname>
+        </param>
+        <param>
+          <type>G</type>
+          <defname>G</defname>
+        </param>
+        <param>
+          <type>B</type>
+          <defname>B</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="175" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegame_1_1i2c_1aa72744d8ce34e48fe75bd216ac66d0e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def game.i2c.initialize</definition>
+        <argsstring>()</argsstring>
+        <name>initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="179" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="179" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacegame_1_1i2c_1a3a43a96db3ce557e507f3c08617b19c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def game.i2c.startgame</definition>
+        <argsstring>()</argsstring>
+        <name>startgame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="183" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" bodystart="183" bodyend="185"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/game/i2c.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

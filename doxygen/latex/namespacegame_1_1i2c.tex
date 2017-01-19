@@ -1,0 +1,302 @@
+\hypertarget{namespacegame_1_1i2c}{}\section{game.\+i2c Namespace Reference}
+\label{namespacegame_1_1i2c}\index{game.\+i2c@{game.\+i2c}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacegame_1_1i2c_a1d5b4aed68be231c5ca8d1611701a17c}{setinputs} ()
+\item 
+def \hyperlink{namespacegame_1_1i2c_a7e8169f802337f7cea2d2f1bd574d10b}{reset\+Average} ()
+\item 
+def \hyperlink{namespacegame_1_1i2c_acd6c2462d1aa66a93f0c6a0082e5e905}{get\+Average} (sensor)
+\item 
+def \hyperlink{namespacegame_1_1i2c_aa4e92c48e15886b974e184f3f010fc1f}{read\+Sensor} (person)
+\item 
+def \hyperlink{namespacegame_1_1i2c_ab81bf937d9c153a616b84229be27cfdf}{readballs} (person)
+\item 
+def \hyperlink{namespacegame_1_1i2c_ae885c09ef1646e179bf8b880fbb284a6}{set\+Led\+Strip\+Time} (person, percentage)
+\item 
+def \hyperlink{namespacegame_1_1i2c_a6c70916a0df4071830627cc65b734df4}{set\+Active\+Time\+Color} (person, R, G, B)
+\item 
+def \hyperlink{namespacegame_1_1i2c_a53e720c22085d10f15012190ea3f8ab9}{set\+Passive\+Time\+Color} (person, R, G, B)
+\item 
+def \hyperlink{namespacegame_1_1i2c_a16a8d8b75765d12d7dfd792a454d7f18}{get\+Active\+Time\+Color} (person)
+\item 
+def \hyperlink{namespacegame_1_1i2c_aff5b5c1346a69dfa85f464da0d1df030}{get\+Passive\+Time\+Color} (person)
+\item 
+def \hyperlink{namespacegame_1_1i2c_a6cc044fcf10970e62f6e7d8a8eea7dbd}{set\+Balls\+Leds} (person, hole, R, B)
+\item 
+def \hyperlink{namespacegame_1_1i2c_a2988a923a2bb6a9d2f4c8e7409e0aded}{set\+Headset\+Color} (person, R, G, B)
+\item 
+def \hyperlink{namespacegame_1_1i2c_aa72744d8ce34e48fe75bd216ac66d0e4}{initialize} ()
+\item 
+def \hyperlink{namespacegame_1_1i2c_a3a43a96db3ce557e507f3c08617b19c5}{startgame} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{namespacegame_1_1i2c_a7e0dfd391eb5195c444ecafa938194e6}{sensor1} = 128
+\item 
+int \hyperlink{namespacegame_1_1i2c_ad8dff55b9286c066e6bc71950b710a28}{sensor2} = 128
+\item 
+int \hyperlink{namespacegame_1_1i2c_ada8d57d81c6d31174d5072cd306a5319}{holes1} = 0
+\item 
+int \hyperlink{namespacegame_1_1i2c_a9b974e58b92b6ace923493eb04219145}{holes2} = 0
+\item 
+\hyperlink{namespacegame_1_1i2c_a411bd59fecc82fdfda0e5c9d7da7447f}{bus} = smbus.\+S\+M\+Bus(1)
+\item 
+int \hyperlink{namespacegame_1_1i2c_a45c6bc6d1135dc398bf8deae861a2ebc}{address} = 0x04
+\item 
+int \hyperlink{namespacegame_1_1i2c_a7ddd85a4f113648910e222fb76d93506}{teller1} = 2
+\item 
+int \hyperlink{namespacegame_1_1i2c_a255c8064ec67df52c6aadc54ea744b11}{teller2} = 2
+\item 
+\hyperlink{namespacegame_1_1i2c_a41e4c864658657ecc0ecc43d65db5a64}{p1active} = Color(255,0,0)
+\item 
+\hyperlink{namespacegame_1_1i2c_a74f6b1b14e9155ac66e89d1c72c3ace9}{p1passive} = Color(0,0,0)
+\item 
+\hyperlink{namespacegame_1_1i2c_a9ba589e5b81a9e64152ebf0c727a3238}{p2active} = Color(255,0,0)
+\item 
+\hyperlink{namespacegame_1_1i2c_a16792386ad01936c15a8677177571de3}{p2passive} = Color(0,0,0)
+\item 
+int \hyperlink{namespacegame_1_1i2c_a0150eb7d9551697284fa8def1d6a5e78}{L\+E\+D\+\_\+\+C\+O\+U\+NT} = 82
+\item 
+int \hyperlink{namespacegame_1_1i2c_a7d6ed2029581b42043aa921270f03362}{L\+E\+D\+\_\+\+P\+IN} = 18
+\item 
+int \hyperlink{namespacegame_1_1i2c_a4985f02a4206248cfb12e46ac7e5fa1a}{L\+E\+D\+\_\+\+F\+R\+E\+Q\+\_\+\+HZ} = 800000
+\item 
+int \hyperlink{namespacegame_1_1i2c_a3577c4e268c23fe92bb64fdb4c878027}{L\+E\+D\+\_\+\+D\+MA} = 5
+\item 
+int \hyperlink{namespacegame_1_1i2c_ac0bf31bc536242ae4682e1d4e782f671}{L\+E\+D\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+SS} = 255
+\item 
+bool \hyperlink{namespacegame_1_1i2c_a02f2f11be4e8df2102f522e3e8983d7b}{L\+E\+D\+\_\+\+I\+N\+V\+E\+RT} = False
+\item 
+\hyperlink{namespacegame_1_1i2c_a42641ead00dd4d143296d15b3987dea9}{strip} = Adafruit\+\_\+\+Neo\+Pixel(\hyperlink{namespacegame_1_1i2c_a0150eb7d9551697284fa8def1d6a5e78}{L\+E\+D\+\_\+\+C\+O\+U\+NT}, \hyperlink{namespacegame_1_1i2c_a7d6ed2029581b42043aa921270f03362}{L\+E\+D\+\_\+\+P\+IN}, \hyperlink{namespacegame_1_1i2c_a4985f02a4206248cfb12e46ac7e5fa1a}{L\+E\+D\+\_\+\+F\+R\+E\+Q\+\_\+\+HZ}, \hyperlink{namespacegame_1_1i2c_a3577c4e268c23fe92bb64fdb4c878027}{L\+E\+D\+\_\+\+D\+MA}, \hyperlink{namespacegame_1_1i2c_a02f2f11be4e8df2102f522e3e8983d7b}{L\+E\+D\+\_\+\+I\+N\+V\+E\+RT}, \hyperlink{namespacegame_1_1i2c_ac0bf31bc536242ae4682e1d4e782f671}{L\+E\+D\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+SS})
+\item 
+int \hyperlink{namespacegame_1_1i2c_a8ae8dfaf0d98d3e56f9f87fa8d863668}{averagecounter} = 0
+\item 
+int \hyperlink{namespacegame_1_1i2c_a90ec455573b3639b7b0d7df1fc0d86db}{sensor1\+Average} = 0
+\item 
+int \hyperlink{namespacegame_1_1i2c_a7d4f6ad3f32515d2299fa2bccce619cf}{sensor2\+Average} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespacegame_1_1i2c_a16a8d8b75765d12d7dfd792a454d7f18}{}\label{namespacegame_1_1i2c_a16a8d8b75765d12d7dfd792a454d7f18} 
+\index{game\+::i2c@{game\+::i2c}!get\+Active\+Time\+Color@{get\+Active\+Time\+Color}}
+\index{get\+Active\+Time\+Color@{get\+Active\+Time\+Color}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{get\+Active\+Time\+Color()}{getActiveTimeColor()}}
+{\footnotesize\ttfamily def game.\+i2c.\+get\+Active\+Time\+Color (\begin{DoxyParamCaption}\item[{}]{person }\end{DoxyParamCaption})}
+
+\hypertarget{namespacegame_1_1i2c_acd6c2462d1aa66a93f0c6a0082e5e905}{}\label{namespacegame_1_1i2c_acd6c2462d1aa66a93f0c6a0082e5e905} 
+\index{game\+::i2c@{game\+::i2c}!get\+Average@{get\+Average}}
+\index{get\+Average@{get\+Average}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{get\+Average()}{getAverage()}}
+{\footnotesize\ttfamily def game.\+i2c.\+get\+Average (\begin{DoxyParamCaption}\item[{}]{sensor }\end{DoxyParamCaption})}
+
+\hypertarget{namespacegame_1_1i2c_aff5b5c1346a69dfa85f464da0d1df030}{}\label{namespacegame_1_1i2c_aff5b5c1346a69dfa85f464da0d1df030} 
+\index{game\+::i2c@{game\+::i2c}!get\+Passive\+Time\+Color@{get\+Passive\+Time\+Color}}
+\index{get\+Passive\+Time\+Color@{get\+Passive\+Time\+Color}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{get\+Passive\+Time\+Color()}{getPassiveTimeColor()}}
+{\footnotesize\ttfamily def game.\+i2c.\+get\+Passive\+Time\+Color (\begin{DoxyParamCaption}\item[{}]{person }\end{DoxyParamCaption})}
+
+\hypertarget{namespacegame_1_1i2c_aa72744d8ce34e48fe75bd216ac66d0e4}{}\label{namespacegame_1_1i2c_aa72744d8ce34e48fe75bd216ac66d0e4} 
+\index{game\+::i2c@{game\+::i2c}!initialize@{initialize}}
+\index{initialize@{initialize}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily def game.\+i2c.\+initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{namespacegame_1_1i2c_ab81bf937d9c153a616b84229be27cfdf}{}\label{namespacegame_1_1i2c_ab81bf937d9c153a616b84229be27cfdf} 
+\index{game\+::i2c@{game\+::i2c}!readballs@{readballs}}
+\index{readballs@{readballs}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{readballs()}{readballs()}}
+{\footnotesize\ttfamily def game.\+i2c.\+readballs (\begin{DoxyParamCaption}\item[{}]{person }\end{DoxyParamCaption})}
+
+\hypertarget{namespacegame_1_1i2c_aa4e92c48e15886b974e184f3f010fc1f}{}\label{namespacegame_1_1i2c_aa4e92c48e15886b974e184f3f010fc1f} 
+\index{game\+::i2c@{game\+::i2c}!read\+Sensor@{read\+Sensor}}
+\index{read\+Sensor@{read\+Sensor}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{read\+Sensor()}{readSensor()}}
+{\footnotesize\ttfamily def game.\+i2c.\+read\+Sensor (\begin{DoxyParamCaption}\item[{}]{person }\end{DoxyParamCaption})}
+
+\hypertarget{namespacegame_1_1i2c_a7e8169f802337f7cea2d2f1bd574d10b}{}\label{namespacegame_1_1i2c_a7e8169f802337f7cea2d2f1bd574d10b} 
+\index{game\+::i2c@{game\+::i2c}!reset\+Average@{reset\+Average}}
+\index{reset\+Average@{reset\+Average}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{reset\+Average()}{resetAverage()}}
+{\footnotesize\ttfamily def game.\+i2c.\+reset\+Average (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{namespacegame_1_1i2c_a6c70916a0df4071830627cc65b734df4}{}\label{namespacegame_1_1i2c_a6c70916a0df4071830627cc65b734df4} 
+\index{game\+::i2c@{game\+::i2c}!set\+Active\+Time\+Color@{set\+Active\+Time\+Color}}
+\index{set\+Active\+Time\+Color@{set\+Active\+Time\+Color}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{set\+Active\+Time\+Color()}{setActiveTimeColor()}}
+{\footnotesize\ttfamily def game.\+i2c.\+set\+Active\+Time\+Color (\begin{DoxyParamCaption}\item[{}]{person,  }\item[{}]{R,  }\item[{}]{G,  }\item[{}]{B }\end{DoxyParamCaption})}
+
+\hypertarget{namespacegame_1_1i2c_a6cc044fcf10970e62f6e7d8a8eea7dbd}{}\label{namespacegame_1_1i2c_a6cc044fcf10970e62f6e7d8a8eea7dbd} 
+\index{game\+::i2c@{game\+::i2c}!set\+Balls\+Leds@{set\+Balls\+Leds}}
+\index{set\+Balls\+Leds@{set\+Balls\+Leds}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{set\+Balls\+Leds()}{setBallsLeds()}}
+{\footnotesize\ttfamily def game.\+i2c.\+set\+Balls\+Leds (\begin{DoxyParamCaption}\item[{}]{person,  }\item[{}]{hole,  }\item[{}]{R,  }\item[{}]{B }\end{DoxyParamCaption})}
+
+\hypertarget{namespacegame_1_1i2c_a2988a923a2bb6a9d2f4c8e7409e0aded}{}\label{namespacegame_1_1i2c_a2988a923a2bb6a9d2f4c8e7409e0aded} 
+\index{game\+::i2c@{game\+::i2c}!set\+Headset\+Color@{set\+Headset\+Color}}
+\index{set\+Headset\+Color@{set\+Headset\+Color}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{set\+Headset\+Color()}{setHeadsetColor()}}
+{\footnotesize\ttfamily def game.\+i2c.\+set\+Headset\+Color (\begin{DoxyParamCaption}\item[{}]{person,  }\item[{}]{R,  }\item[{}]{G,  }\item[{}]{B }\end{DoxyParamCaption})}
+
+\hypertarget{namespacegame_1_1i2c_a1d5b4aed68be231c5ca8d1611701a17c}{}\label{namespacegame_1_1i2c_a1d5b4aed68be231c5ca8d1611701a17c} 
+\index{game\+::i2c@{game\+::i2c}!setinputs@{setinputs}}
+\index{setinputs@{setinputs}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{setinputs()}{setinputs()}}
+{\footnotesize\ttfamily def game.\+i2c.\+setinputs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{namespacegame_1_1i2c_ae885c09ef1646e179bf8b880fbb284a6}{}\label{namespacegame_1_1i2c_ae885c09ef1646e179bf8b880fbb284a6} 
+\index{game\+::i2c@{game\+::i2c}!set\+Led\+Strip\+Time@{set\+Led\+Strip\+Time}}
+\index{set\+Led\+Strip\+Time@{set\+Led\+Strip\+Time}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{set\+Led\+Strip\+Time()}{setLedStripTime()}}
+{\footnotesize\ttfamily def game.\+i2c.\+set\+Led\+Strip\+Time (\begin{DoxyParamCaption}\item[{}]{person,  }\item[{}]{percentage }\end{DoxyParamCaption})}
+
+\hypertarget{namespacegame_1_1i2c_a53e720c22085d10f15012190ea3f8ab9}{}\label{namespacegame_1_1i2c_a53e720c22085d10f15012190ea3f8ab9} 
+\index{game\+::i2c@{game\+::i2c}!set\+Passive\+Time\+Color@{set\+Passive\+Time\+Color}}
+\index{set\+Passive\+Time\+Color@{set\+Passive\+Time\+Color}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{set\+Passive\+Time\+Color()}{setPassiveTimeColor()}}
+{\footnotesize\ttfamily def game.\+i2c.\+set\+Passive\+Time\+Color (\begin{DoxyParamCaption}\item[{}]{person,  }\item[{}]{R,  }\item[{}]{G,  }\item[{}]{B }\end{DoxyParamCaption})}
+
+\hypertarget{namespacegame_1_1i2c_a3a43a96db3ce557e507f3c08617b19c5}{}\label{namespacegame_1_1i2c_a3a43a96db3ce557e507f3c08617b19c5} 
+\index{game\+::i2c@{game\+::i2c}!startgame@{startgame}}
+\index{startgame@{startgame}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{startgame()}{startgame()}}
+{\footnotesize\ttfamily def game.\+i2c.\+startgame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacegame_1_1i2c_a45c6bc6d1135dc398bf8deae861a2ebc}{}\label{namespacegame_1_1i2c_a45c6bc6d1135dc398bf8deae861a2ebc} 
+\index{game\+::i2c@{game\+::i2c}!address@{address}}
+\index{address@{address}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{address}{address}}
+{\footnotesize\ttfamily int address = 0x04}
+
+\hypertarget{namespacegame_1_1i2c_a8ae8dfaf0d98d3e56f9f87fa8d863668}{}\label{namespacegame_1_1i2c_a8ae8dfaf0d98d3e56f9f87fa8d863668} 
+\index{game\+::i2c@{game\+::i2c}!averagecounter@{averagecounter}}
+\index{averagecounter@{averagecounter}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{averagecounter}{averagecounter}}
+{\footnotesize\ttfamily int averagecounter = 0}
+
+\hypertarget{namespacegame_1_1i2c_a411bd59fecc82fdfda0e5c9d7da7447f}{}\label{namespacegame_1_1i2c_a411bd59fecc82fdfda0e5c9d7da7447f} 
+\index{game\+::i2c@{game\+::i2c}!bus@{bus}}
+\index{bus@{bus}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{bus}{bus}}
+{\footnotesize\ttfamily bus = smbus.\+S\+M\+Bus(1)}
+
+\hypertarget{namespacegame_1_1i2c_ada8d57d81c6d31174d5072cd306a5319}{}\label{namespacegame_1_1i2c_ada8d57d81c6d31174d5072cd306a5319} 
+\index{game\+::i2c@{game\+::i2c}!holes1@{holes1}}
+\index{holes1@{holes1}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{holes1}{holes1}}
+{\footnotesize\ttfamily int holes1 = 0}
+
+\hypertarget{namespacegame_1_1i2c_a9b974e58b92b6ace923493eb04219145}{}\label{namespacegame_1_1i2c_a9b974e58b92b6ace923493eb04219145} 
+\index{game\+::i2c@{game\+::i2c}!holes2@{holes2}}
+\index{holes2@{holes2}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{holes2}{holes2}}
+{\footnotesize\ttfamily int holes2 = 0}
+
+\hypertarget{namespacegame_1_1i2c_ac0bf31bc536242ae4682e1d4e782f671}{}\label{namespacegame_1_1i2c_ac0bf31bc536242ae4682e1d4e782f671} 
+\index{game\+::i2c@{game\+::i2c}!L\+E\+D\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+SS@{L\+E\+D\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+SS}}
+\index{L\+E\+D\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+SS@{L\+E\+D\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+SS}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{L\+E\+D\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+SS}{LED\_BRIGHTNESS}}
+{\footnotesize\ttfamily int L\+E\+D\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+SS = 255}
+
+\hypertarget{namespacegame_1_1i2c_a0150eb7d9551697284fa8def1d6a5e78}{}\label{namespacegame_1_1i2c_a0150eb7d9551697284fa8def1d6a5e78} 
+\index{game\+::i2c@{game\+::i2c}!L\+E\+D\+\_\+\+C\+O\+U\+NT@{L\+E\+D\+\_\+\+C\+O\+U\+NT}}
+\index{L\+E\+D\+\_\+\+C\+O\+U\+NT@{L\+E\+D\+\_\+\+C\+O\+U\+NT}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{L\+E\+D\+\_\+\+C\+O\+U\+NT}{LED\_COUNT}}
+{\footnotesize\ttfamily int L\+E\+D\+\_\+\+C\+O\+U\+NT = 82}
+
+\hypertarget{namespacegame_1_1i2c_a3577c4e268c23fe92bb64fdb4c878027}{}\label{namespacegame_1_1i2c_a3577c4e268c23fe92bb64fdb4c878027} 
+\index{game\+::i2c@{game\+::i2c}!L\+E\+D\+\_\+\+D\+MA@{L\+E\+D\+\_\+\+D\+MA}}
+\index{L\+E\+D\+\_\+\+D\+MA@{L\+E\+D\+\_\+\+D\+MA}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{L\+E\+D\+\_\+\+D\+MA}{LED\_DMA}}
+{\footnotesize\ttfamily int L\+E\+D\+\_\+\+D\+MA = 5}
+
+\hypertarget{namespacegame_1_1i2c_a4985f02a4206248cfb12e46ac7e5fa1a}{}\label{namespacegame_1_1i2c_a4985f02a4206248cfb12e46ac7e5fa1a} 
+\index{game\+::i2c@{game\+::i2c}!L\+E\+D\+\_\+\+F\+R\+E\+Q\+\_\+\+HZ@{L\+E\+D\+\_\+\+F\+R\+E\+Q\+\_\+\+HZ}}
+\index{L\+E\+D\+\_\+\+F\+R\+E\+Q\+\_\+\+HZ@{L\+E\+D\+\_\+\+F\+R\+E\+Q\+\_\+\+HZ}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{L\+E\+D\+\_\+\+F\+R\+E\+Q\+\_\+\+HZ}{LED\_FREQ\_HZ}}
+{\footnotesize\ttfamily int L\+E\+D\+\_\+\+F\+R\+E\+Q\+\_\+\+HZ = 800000}
+
+\hypertarget{namespacegame_1_1i2c_a02f2f11be4e8df2102f522e3e8983d7b}{}\label{namespacegame_1_1i2c_a02f2f11be4e8df2102f522e3e8983d7b} 
+\index{game\+::i2c@{game\+::i2c}!L\+E\+D\+\_\+\+I\+N\+V\+E\+RT@{L\+E\+D\+\_\+\+I\+N\+V\+E\+RT}}
+\index{L\+E\+D\+\_\+\+I\+N\+V\+E\+RT@{L\+E\+D\+\_\+\+I\+N\+V\+E\+RT}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{L\+E\+D\+\_\+\+I\+N\+V\+E\+RT}{LED\_INVERT}}
+{\footnotesize\ttfamily bool L\+E\+D\+\_\+\+I\+N\+V\+E\+RT = False}
+
+\hypertarget{namespacegame_1_1i2c_a7d6ed2029581b42043aa921270f03362}{}\label{namespacegame_1_1i2c_a7d6ed2029581b42043aa921270f03362} 
+\index{game\+::i2c@{game\+::i2c}!L\+E\+D\+\_\+\+P\+IN@{L\+E\+D\+\_\+\+P\+IN}}
+\index{L\+E\+D\+\_\+\+P\+IN@{L\+E\+D\+\_\+\+P\+IN}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{L\+E\+D\+\_\+\+P\+IN}{LED\_PIN}}
+{\footnotesize\ttfamily int L\+E\+D\+\_\+\+P\+IN = 18}
+
+\hypertarget{namespacegame_1_1i2c_a41e4c864658657ecc0ecc43d65db5a64}{}\label{namespacegame_1_1i2c_a41e4c864658657ecc0ecc43d65db5a64} 
+\index{game\+::i2c@{game\+::i2c}!p1active@{p1active}}
+\index{p1active@{p1active}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{p1active}{p1active}}
+{\footnotesize\ttfamily p1active = Color(255,0,0)}
+
+\hypertarget{namespacegame_1_1i2c_a74f6b1b14e9155ac66e89d1c72c3ace9}{}\label{namespacegame_1_1i2c_a74f6b1b14e9155ac66e89d1c72c3ace9} 
+\index{game\+::i2c@{game\+::i2c}!p1passive@{p1passive}}
+\index{p1passive@{p1passive}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{p1passive}{p1passive}}
+{\footnotesize\ttfamily p1passive = Color(0,0,0)}
+
+\hypertarget{namespacegame_1_1i2c_a9ba589e5b81a9e64152ebf0c727a3238}{}\label{namespacegame_1_1i2c_a9ba589e5b81a9e64152ebf0c727a3238} 
+\index{game\+::i2c@{game\+::i2c}!p2active@{p2active}}
+\index{p2active@{p2active}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{p2active}{p2active}}
+{\footnotesize\ttfamily p2active = Color(255,0,0)}
+
+\hypertarget{namespacegame_1_1i2c_a16792386ad01936c15a8677177571de3}{}\label{namespacegame_1_1i2c_a16792386ad01936c15a8677177571de3} 
+\index{game\+::i2c@{game\+::i2c}!p2passive@{p2passive}}
+\index{p2passive@{p2passive}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{p2passive}{p2passive}}
+{\footnotesize\ttfamily p2passive = Color(0,0,0)}
+
+\hypertarget{namespacegame_1_1i2c_a7e0dfd391eb5195c444ecafa938194e6}{}\label{namespacegame_1_1i2c_a7e0dfd391eb5195c444ecafa938194e6} 
+\index{game\+::i2c@{game\+::i2c}!sensor1@{sensor1}}
+\index{sensor1@{sensor1}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{sensor1}{sensor1}}
+{\footnotesize\ttfamily int sensor1 = 128}
+
+\hypertarget{namespacegame_1_1i2c_a90ec455573b3639b7b0d7df1fc0d86db}{}\label{namespacegame_1_1i2c_a90ec455573b3639b7b0d7df1fc0d86db} 
+\index{game\+::i2c@{game\+::i2c}!sensor1\+Average@{sensor1\+Average}}
+\index{sensor1\+Average@{sensor1\+Average}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{sensor1\+Average}{sensor1Average}}
+{\footnotesize\ttfamily int sensor1\+Average = 0}
+
+\hypertarget{namespacegame_1_1i2c_ad8dff55b9286c066e6bc71950b710a28}{}\label{namespacegame_1_1i2c_ad8dff55b9286c066e6bc71950b710a28} 
+\index{game\+::i2c@{game\+::i2c}!sensor2@{sensor2}}
+\index{sensor2@{sensor2}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{sensor2}{sensor2}}
+{\footnotesize\ttfamily int sensor2 = 128}
+
+\hypertarget{namespacegame_1_1i2c_a7d4f6ad3f32515d2299fa2bccce619cf}{}\label{namespacegame_1_1i2c_a7d4f6ad3f32515d2299fa2bccce619cf} 
+\index{game\+::i2c@{game\+::i2c}!sensor2\+Average@{sensor2\+Average}}
+\index{sensor2\+Average@{sensor2\+Average}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{sensor2\+Average}{sensor2Average}}
+{\footnotesize\ttfamily int sensor2\+Average = 0}
+
+\hypertarget{namespacegame_1_1i2c_a42641ead00dd4d143296d15b3987dea9}{}\label{namespacegame_1_1i2c_a42641ead00dd4d143296d15b3987dea9} 
+\index{game\+::i2c@{game\+::i2c}!strip@{strip}}
+\index{strip@{strip}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{strip}{strip}}
+{\footnotesize\ttfamily strip = Adafruit\+\_\+\+Neo\+Pixel(\hyperlink{namespacegame_1_1i2c_a0150eb7d9551697284fa8def1d6a5e78}{L\+E\+D\+\_\+\+C\+O\+U\+NT}, \hyperlink{namespacegame_1_1i2c_a7d6ed2029581b42043aa921270f03362}{L\+E\+D\+\_\+\+P\+IN}, \hyperlink{namespacegame_1_1i2c_a4985f02a4206248cfb12e46ac7e5fa1a}{L\+E\+D\+\_\+\+F\+R\+E\+Q\+\_\+\+HZ}, \hyperlink{namespacegame_1_1i2c_a3577c4e268c23fe92bb64fdb4c878027}{L\+E\+D\+\_\+\+D\+MA}, \hyperlink{namespacegame_1_1i2c_a02f2f11be4e8df2102f522e3e8983d7b}{L\+E\+D\+\_\+\+I\+N\+V\+E\+RT}, \hyperlink{namespacegame_1_1i2c_ac0bf31bc536242ae4682e1d4e782f671}{L\+E\+D\+\_\+\+B\+R\+I\+G\+H\+T\+N\+E\+SS})}
+
+\hypertarget{namespacegame_1_1i2c_a7ddd85a4f113648910e222fb76d93506}{}\label{namespacegame_1_1i2c_a7ddd85a4f113648910e222fb76d93506} 
+\index{game\+::i2c@{game\+::i2c}!teller1@{teller1}}
+\index{teller1@{teller1}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{teller1}{teller1}}
+{\footnotesize\ttfamily int teller1 = 2}
+
+\hypertarget{namespacegame_1_1i2c_a255c8064ec67df52c6aadc54ea744b11}{}\label{namespacegame_1_1i2c_a255c8064ec67df52c6aadc54ea744b11} 
+\index{game\+::i2c@{game\+::i2c}!teller2@{teller2}}
+\index{teller2@{teller2}!game\+::i2c@{game\+::i2c}}
+\subsubsection{\texorpdfstring{teller2}{teller2}}
+{\footnotesize\ttfamily int teller2 = 2}
+

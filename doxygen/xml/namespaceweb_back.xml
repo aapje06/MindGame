@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.12">
+  <compounddef id="namespaceweb_back" kind="namespace" language="Python">
+    <compoundname>webBack</compoundname>
+    <innerclass refid="classweb_back_1_1_server_sent_event" prot="public">webBack::ServerSentEvent</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceweb_back_1a54be33696aa638ea93d5b7bd190da106" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool noFurtherRequests</definition>
+        <argsstring></argsstring>
+        <name>noFurtherRequests</name>
+        <initializer>=  True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="12" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceweb_back_1afe63fea7be31b0200b496d08bc6b517d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>app</definition>
+        <argsstring></argsstring>
+        <name>app</name>
+        <initializer>=  Flask(__name__, static_url_path=&apos;&apos;, static_path=&apos;&apos;,static_folder=&apos;&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="37" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceweb_back_1a0514aabed091ee5e2f35766eb01eced6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>debug</definition>
+        <argsstring></argsstring>
+        <name>debug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="39" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceweb_back_1a33f3d888c60d659e953c90c18f532678" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>use_reloader</definition>
+        <argsstring></argsstring>
+        <name>use_reloader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="40" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceweb_back_1a47e597222ad8ae582ae1306ab3d3d395" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>threaded</definition>
+        <argsstring></argsstring>
+        <name>threaded</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="41" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceweb_back_1aa3905888cf38ed1374d1adc98c45bca6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def webBack.send_css</definition>
+        <argsstring>(path)</argsstring>
+        <name>send_css</name>
+        <param>
+          <type>path</type>
+          <defname>path</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="44" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceweb_back_1a8d2fb2f4dc56c083de514b9c0d43d7fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def webBack.send_pics</definition>
+        <argsstring>(path)</argsstring>
+        <name>send_pics</name>
+        <param>
+          <type>path</type>
+          <defname>path</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="48" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceweb_back_1a48f3c269d1d9ba6b7edf365414bbaea8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def webBack.send_pics_stats</definition>
+        <argsstring>(path)</argsstring>
+        <name>send_pics_stats</name>
+        <param>
+          <type>path</type>
+          <defname>path</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="52" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceweb_back_1a36644ac58627cbb02b55457d97a7f915" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def webBack.send_js</definition>
+        <argsstring>(path)</argsstring>
+        <name>send_js</name>
+        <param>
+          <type>path</type>
+          <defname>path</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="56" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceweb_back_1adac705fce6dde6308b579f703b3b627f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def webBack.send_fonts</definition>
+        <argsstring>(path)</argsstring>
+        <name>send_fonts</name>
+        <param>
+          <type>path</type>
+          <defname>path</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="60" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="60" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceweb_back_1aca1190d89e9c6bc7c6624cad8c032bb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def webBack.index</definition>
+        <argsstring>()</argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="65" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="65" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceweb_back_1acb08cb868c656ab890c47f4a8862015b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def webBack.inGame</definition>
+        <argsstring>(path)</argsstring>
+        <name>inGame</name>
+        <param>
+          <type>path</type>
+          <defname>path</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="70" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="70" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceweb_back_1a251f9bc8dbc3de8ac0e0aa681388d52d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def webBack.stats</definition>
+        <argsstring>()</argsstring>
+        <name>stats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="77" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="77" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceweb_back_1aaf96757aed7ac16a95fea349a78f9faf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def webBack.startInfo</definition>
+        <argsstring>()</argsstring>
+        <name>startInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="82" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="82" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceweb_back_1a586d6d3a74f2479f390486276186a626" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def webBack.gameInfo</definition>
+        <argsstring>(path)</argsstring>
+        <name>gameInfo</name>
+        <param>
+          <type>path</type>
+          <defname>path</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="120" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="120" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceweb_back_1a2966f9911dbe98fd9e2cc63ce6458731" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def webBack.debug</definition>
+        <argsstring>()</argsstring>
+        <name>debug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="150" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="150" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceweb_back_1a5f030b0ffd219cb8152121a951e8767a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def webBack.startgame</definition>
+        <argsstring>()</argsstring>
+        <name>startgame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="185" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="185" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceweb_back_1a37f3ed1601cc23aa04e72ebf237ba3c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def webBack.statinfo</definition>
+        <argsstring>()</argsstring>
+        <name>statinfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="227" column="1" bodyfile="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" bodystart="227" bodyend="275"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pieter-jan/Dropbox/School/2016-2017/Embedded prototyping/Python/webBack.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>
