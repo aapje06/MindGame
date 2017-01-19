@@ -1,3 +1,2 @@
 # MindGame
 School project
-test
